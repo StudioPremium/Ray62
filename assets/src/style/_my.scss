@@ -1,0 +1,28 @@
+//ШРИФТЫ
+@import "fonts/fonts";
+
+
+//ИКОНКИ
+@import "icons/icons";
+
+
+//ОБЩИЕ СТИЛИ ВСЕХ СТРАНИЦ
+
+//типографика
+@import "typography/typography";
+//обычные стили страницы page, page-content и т.п.
+@import "common/page";
+
+//БЛОКИ 
+
+//хедер
+@import "blocks/header/header";
+//футер
+@import "blocks/footer/footer";
+
+//УТИЛИТЫ
+//пространство
+@import "utilities/utilities";
+//СТРАНИЦЫ
+
+@import "pages/index/index";
