@@ -1,0 +1,19 @@
+.logo {
+    display: flex;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+
+    &__text {
+        color: $black;
+        font-weight: bold;
+        font-size: 0.875rem;
+        line-height: 1;
+        text-transform: uppercase;
+        letter-spacing: -0.4px;
+        margin-left: 0.25rem;
+    }
+}

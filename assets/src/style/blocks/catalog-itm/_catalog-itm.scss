@@ -1,0 +1,22 @@
+.catalog-itm {
+	background-repeat: no-repeat;
+	background-position: top left;
+	padding-top: 1.25rem;
+	padding-left: 5rem;
+	padding-bottom: 0.75rem;
+	&_auto {
+		background-image: url(../img/catalog-itm-icon.png);
+	}
+	&__title {
+		color: $black;
+		font-size: 0.875rem;
+		text-transform: uppercase;
+		text-decoration: underline;
+		a, span {
+			color: $black;
+			&:hover {
+				color: $link-hover-color;
+			}
+		}
+	}
+}

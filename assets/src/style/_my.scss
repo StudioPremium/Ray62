@@ -10,14 +10,40 @@
 
 //типографика
 @import "typography/typography";
-//обычные стили страницы page, page-content и т.п.
-@import "common/page";
 
 //БЛОКИ 
 
-//хедер
+// хедер
 @import "blocks/header/header";
-//футер
+// логотип
+@import "blocks/logo/logo";
+// выпадающее меню
+@import "blocks/dropdown/dropdown";
+// поиск
+@import "blocks/search/search";
+// кнопка
+@import "blocks/btn/btn";
+// список ссылок для входа
+@import "blocks/enter-box/enter-box";
+// содержание страницы
+@import "blocks/page-content/page-content";
+// главный баннер
+@import "blocks/main-banner/main-banner";
+// секция
+@import "blocks/section/section";
+// единица каталога
+@import "blocks/catalog-itm/catalog-itm";
+// карточка товара
+@import "blocks/card-product/card-product";
+// список товаров
+@import "blocks/city-list/city-list";
+// список компаний
+@import "blocks/company-list/company-list";
+// новости
+@import "blocks/news/news";
+// дата
+@import "blocks/date/date";
+// футер
 @import "blocks/footer/footer";
 
 //УТИЛИТЫ
@@ -26,3 +52,4 @@
 //СТРАНИЦЫ
 
 @import "pages/index/index";
+

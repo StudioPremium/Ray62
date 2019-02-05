@@ -10,6 +10,8 @@
 //= ../../../node_modules/bootstrap/js/dist/util.js
 //модальное окно
 //= ../../../node_modules/bootstrap/js/dist/modal.js
+//модальное окно
+//= ../../../node_modules/bootstrap/js/dist/dropdown.js
 
 
 // Импортируем телефонную валидацию

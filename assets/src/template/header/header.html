@@ -1,7 +1,7 @@
 <header class="header">
     <div class="container">
-        <div class="row">
-            <div class="col-6">
+        <div class="row header__top">
+            <div class="col-md-6">
                 <ul class="nav header-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Акции</a>
@@ -17,6 +17,63 @@
                     </li>
                 </ul>
             </div>
+            <div class="col-md-6">
+                <ul class="header-menu2 float-right">
+                    <li class="header-menu2__itm font-weight-bold">
+                        <span class="header-menu2__text">Корзина: </span>
+                        <a href="#">
+                            <span>5</span> шт. на сумму <span>1 300 000</span> р.
+                        </a>
+                    </li>
+                    <li class="header-menu2__itm">
+                        <span class="header-menu2__text">Ваш регион: </span>
+                        <div class="header-menu2__dropdown">
+                            <button type="button" class="header-menu2__button">Выберите регион</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
+        <nav class="navbar navbar-expand-lg navbar-light header__bottom">
+            <a href="#" class="logo navbar-brand">
+                    <i class="logo__icon icon icon_logo"></i>
+                    <span class="logo__text">Биржа <br>оборудования</span>
+                </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-4">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dropdown-toggle_primary dropdown-toggle_caret_none" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="dropdown-toggle__icon icon icon_burger_white"></i>
+                            <span class="dropdown-toggle__text">Категории</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Категория</a>
+                            <a class="dropdown-item" href="#">Категория</a>
+                            <a class="dropdown-item" href="#">Категория</a>
+                            <a class="dropdown-item" href="#">Категория</a>
+                            <a class="dropdown-item" href="#">Категория</a>
+                            <a class="dropdown-item" href="#">Категория</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class=" header__search search mr-4">
+                    <input class="form-control search__input" type="search" placeholder="Поиск оборудования" aria-label="Search">
+                    <button class="btn btn-primary search__btn" type="submit">Найти</button>
+                </form>
+                <button type="button" class="btn btn-success btn_radius mr-4">Добавить объявление</button>
+                <ul class="enter-box">
+                   <li class="enter-box__itm">
+                       <a href="#" class="enter-box__link font-weight-bold">Вход</a>
+                   </li>
+                   /
+                   <li class="enter-box__itm">
+                       <a href="#" class="enter-box__link font-weight-bold">Регистрация</a>
+                   </li>
+                </ul>
+            </div>
+        </nav>
     </div>
 </header>
