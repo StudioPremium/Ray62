@@ -3,5 +3,7 @@ $(document).ready(function() {
 });
 
 
-// Импортируем sформу модального окна
+// Импортируем хедер
 //= header/header.js
+// Импортируем мобильное меню
+//= mobile-menu/mobile-menu.js

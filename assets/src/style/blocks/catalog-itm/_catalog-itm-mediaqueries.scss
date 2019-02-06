@@ -1,0 +1,9 @@
+@media (max-width: $screen-width-xs) {
+	.catalog-itm {
+		background-size: 40px 40px;
+		padding: 0.625rem 0 0.25rem 3.5rem;
+		&__title {
+			font-size: 0.75rem;
+		}
+	}
+}

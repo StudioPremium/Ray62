@@ -1,0 +1,11 @@
+.link-switch {
+	color: $gray-500;
+	border-bottom: 1px dotted;
+
+	&:hover,
+	&:focus {
+		color: $primary;
+		border-color: $primary;
+		text-decoration: none;
+	}
+}

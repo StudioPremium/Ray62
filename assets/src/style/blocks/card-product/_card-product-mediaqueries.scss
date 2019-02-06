@@ -1,0 +1,10 @@
+@media (max-width: $screen-width-md) {
+	.card-product {
+		&__footer {
+			flex-direction: column;
+		}
+		&__price {
+			margin-bottom: 1rem;
+		}
+	}
+}

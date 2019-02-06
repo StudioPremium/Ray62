@@ -3,10 +3,13 @@
 	align-items: center;
 	&_primary {
 		background-color: $primary;
+		border: 1px solid $primary;
 		@include transition($btn-transition);
 		&:hover,
 		&:focus {
-			background-color: darken($link-color, 15%);
+			background-color: darken($primary, 15%);
+			border-color: darken($primary, 15%);
+			outline: none;
 		}
 		.dropdown-toggle__text {
 			color: white;

@@ -1,0 +1,38 @@
+.area-switcher {
+	&__column {
+
+	}
+	&__title {
+		padding-left: 2rem;
+    	background-repeat: no-repeat;
+    	background-image: url(../img/flags-min.png);
+	    display: inline-block;
+	    margin-bottom: 0.5rem;
+	    &_russia {
+	    	background-position: 0 0;
+	    }
+	    &_ukraine {
+	    	background-position: 0 -22px;
+	    }
+	    &_belarus {
+	    	background-position: 0 -44px;
+	    }
+	    &_uzbekistan {
+	    	background-position: 0 -131px;
+	    }
+	}
+	&__cities {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		padding-left: 2rem;
+		margin-bottom: 0.875rem;
+	}
+	&__city {
+		margin-bottom: 0.25rem;
+	}
+	&__more {
+		padding-left: 2rem;
+		color: $gray-500;
+	}
+}

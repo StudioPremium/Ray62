@@ -45,6 +45,18 @@
 @import "blocks/date/date";
 // футер
 @import "blocks/footer/footer";
+// собственные стили слайдера
+@import "blocks/slick-carousel/slick-carousel";
+// модальное окно 
+@import "blocks/modal/modal";
+// модальное окно с выбором региона
+@import "blocks/modal-region/modal-region";
+// мобильное меню
+@import "blocks/mobile-menu/mobile-menu";
+// выбор локации
+@import "blocks/area-switcher/area-switcher";
+// ссылка для смены
+@import "blocks/link-switch/link-switch";
 
 //УТИЛИТЫ
 //пространство

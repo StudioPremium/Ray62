@@ -1,3 +1,28 @@
 @media (max-width: $screen-width-lg) {
+	.header {
+		&__collapse {
+			flex-wrap: wrap;
+		}
+		&__search {
+			max-width: none;
+		}
+	}
+}
 
+@media (max-width: $screen-width-md) {
+	.header-menu2 {
+		justify-content: space-between;
+	}
+}
+
+@media (max-width: $screen-width-xs) {
+	.header-menu2 {
+		flex-direction: column;
+		align-items: flex-end;
+		&__itm {
+			&:first-child {
+				margin-bottom: 0.5rem;
+			}
+		}
+	}
 }

@@ -1,0 +1,27 @@
+@media (max-width: $screen-width-md) {
+    .modal-region {
+        &__locations {
+            .area-switcher {
+                flex-basis: 33.33333%;
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-width-xs) {
+	.modal-region {
+		&__search {
+			.search {
+				flex-direction: column;
+			}
+			.search__input {
+				margin-bottom: 0.5rem;
+			}
+		}
+		&__locations {
+            .area-switcher {
+                flex-basis: 100%;
+            }
+        }
+	}
+}

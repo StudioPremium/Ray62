@@ -15,6 +15,9 @@
 			width: 100%;
 		}
 	}
+	&__content {
+		overflow: hidden;
+	}
 	&__footer {
 		display: flex;
 		margin-top: 1rem;
@@ -31,3 +34,5 @@
 		font-size: 1rem;
 	}
 }
+
+@import "card-product-mediaqueries";
