@@ -32,7 +32,9 @@
 @import "../../../node_modules/slick-carousel/slick/slick.scss";
 @import "../../../node_modules/slick-carousel/slick/slick-theme.scss";
 
-
+@import "../../../node_modules/jquery-ui/themes/base/core";
+@import "../../../node_modules/jquery-ui/themes/base/autocomplete";
+@import "../../../node_modules/jquery-ui/themes/base/menu";
 
 // Подключение своих SCSS файлов
 @import "my";

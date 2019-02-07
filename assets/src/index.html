@@ -652,6 +652,8 @@
     <!--/Импортируем футер-->
     <script src="js/main.js" async></script>
     <script>
+
+        // главный баннер
         $('#main-banner').slick({
           dots: false,
           infinite: true,
@@ -663,8 +665,56 @@
           autoplay: true,
           arrows: false
         });
+
         $(document).ready(function() {
+            $( function() {
+
+                // Массив с названием городов
+                var availableTags = [
+                  "Москва",
+                  "Санкт-Петербург",
+                  "Волгоград",
+                  "Воронеж",
+                  "Екатеринбург",
+                  "Казань",
+                  "Калуга",
+                  "Краснодар",
+                  "Нижний Новгород",
+                  "Новосибирск",
+                  "Ростов-на-Дону",
+                  "Самара",
+                  "Саратов",
+                  "Сочи",
+                  "Уфа",
+                  "Ярославль",
+                  "Киев",
+                  "Днепр",
+                  "Донецк",
+                  "Запорожье",
+                  "Кривой рог",
+                  "Львов",
+                  "Одесса",
+                  "Харьков",
+                  "Минск",
+                  "Брест",
+                  "Витебск",
+                  "Гомель",
+                  "Гродно",
+                  "Могилев",
+                  "Ташкент",
+                ];
+
+                // включаем автодополнение
+                $( "#cityes-search-input" ).autocomplete({
+                  source: availableTags
+                });
+
+            });
+
+            // если зашли с мобильного, собрание карточек продуктов и компаний перевожу в слайдер
+
             if (document.documentElement.clientWidth < 576) {
+
                 $('#products').slick({
                   dots: false,
                   infinite: false,
@@ -675,8 +725,11 @@
                   autoplay: false,
                   arrows: true
                 });
+
                 $(function() {
+
                     $('.company-list').each(function(key, item) {
+                        
                         var sliderIdName = 'slider' + key;
                         this.id = sliderIdName;
                         var sliderId = '#' + sliderIdName;
@@ -692,8 +745,10 @@
                             arrows: true
                         });
                     });
+
                 });
             };
+
         });
     </script>
 </body>

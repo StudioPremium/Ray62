@@ -1,0 +1,25 @@
+.ui-front {
+	z-index: 1100;
+}
+.ui-menu {
+	border: 1px solid $input-focus-border-color;
+	border-top: none;
+	&:hover {
+		top: 0;
+	}
+	.ui-menu-item {
+		background-color: white;
+		border-top: 1px solid $gray-300;
+		&:first-child {
+			border-top-color: transparent;
+		}
+	}
+	.ui-menu-item-wrapper  {
+		padding: .4375rem .75rem;
+	}
+	.ui-state-focus,
+	.ui-state-active  {
+		margin: 0;
+		transform: translateY(1px);
+	}
+}
