@@ -1,6 +1,9 @@
 .link-switch {
 	color: $gray-500;
+	background: transparent;
+	border: none;
 	border-bottom: 1px dotted;
+	cursor: pointer;
 
 	&:hover,
 	&:focus {

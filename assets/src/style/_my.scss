@@ -57,15 +57,30 @@
 @import "blocks/area-switcher/area-switcher";
 // ссылка для смены
 @import "blocks/link-switch/link-switch";
+// хлебные крошки
+@import "blocks/breadcrumb/breadcrumb";
+// карточка новостей
+@import "blocks/news/card-news";
+// заголовок карточки
+@import "blocks/card-title/card-title";
+// рекламный блок
+@import "blocks/ad-unit/ad-unit";
+// пагинация
+@import "blocks/pagination/pagination";
+// галерея товара
+@import "blocks/product-gallery/product-gallery";
+// состояние товара
+@import "blocks/product-condition/product-condition";
 
-//УТИЛИТЫ
-//пространство
+// УТИЛИТЫ
+// пространство
 @import "utilities/utilities";
 
 // jquery-ui
 @import "jquery-ui/_jquery-ui";
 
-//СТРАНИЦЫ
-
+// СТРАНИЦЫ
+// главная
 @import "pages/index/index";
-
+// детальная карточка товара
+@import "pages/product-page/product-page";

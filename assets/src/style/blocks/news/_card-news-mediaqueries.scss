@@ -1,0 +1,26 @@
+@media (max-width: $screen-width-sm) {
+    .card-news {
+        &__img {
+			flex-basis: 35%;
+
+        }
+
+        &__content {
+ 			flex-basis: 65%;
+        }
+    }
+}
+
+@media (max-width: $screen-width-xs) {
+    .card-news {
+    	flex-direction: column;
+        &__img {
+			margin-bottom: 1rem;
+			margin-right: 0;
+        }
+
+        &__content {
+ 		
+        }
+    }
+}

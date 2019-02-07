@@ -1,0 +1,17 @@
+.card-news {
+	display: flex;
+	justify-content: space-between;
+	
+	&__img {
+		margin-right: 30px;
+		flex-basis: 25%;
+		img {
+			width: 100%;
+		}
+	}
+	&__content {
+		flex: 75% 1 1;
+	}
+}
+
+@import "card-news-mediaqueries";

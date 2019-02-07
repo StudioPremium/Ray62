@@ -1,0 +1,23 @@
+@media (max-width: $screen-width-xs) {
+    .pagination {
+        font-size: 0.75rem;
+
+        .page-item {
+            margin-left: 0.25rem;
+            margin-right: 0.25rem;
+        }
+
+        .page-link {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+
+    .page-item:first-child .page-link,
+    .page-item:last-child .page-link,
+        {
+        border-radius: 1rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+}
