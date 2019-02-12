@@ -1,0 +1,21 @@
+.icon {
+	display: block;
+	background-repeat: no-repeat;
+	&_logo {
+		width: 32px;
+		height: 32px;
+		background-position: -2px -2px;
+		background-image: url(../img/ray-sprite.png);
+	}
+	&_burger_white {
+		width: 28px;
+		height: 17px;
+		background-position: -37px -2px;
+		background-image: url(../img/ray-sprite.png);
+	}
+	&_message {
+		width: 24px;
+		height: 19px;
+		background-image: url(../img/icon-mail.png);
+	}
+}

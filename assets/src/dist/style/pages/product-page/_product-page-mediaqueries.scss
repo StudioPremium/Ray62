@@ -1,0 +1,36 @@
+@media (max-width: $screen-width-sm) {
+	.product-spec-nav {
+		flex-wrap: nowrap;
+		overflow-x: scroll;
+		padding-bottom: 1rem;
+		.nav-link {
+			white-space: nowrap;
+			display: block;
+		}
+	}
+}
+@media (max-width: $screen-width-xs) {
+	.product-page-info {
+		&__part {
+			flex-direction: column;
+			align-items: flex-start;
+			margin-bottom: 1rem;
+		}
+		&__price {
+			margin-bottom: 1rem;
+		}
+		&__interaction {
+			.link-switch {
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+		&__btn {
+			margin-bottom: 1.25rem;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

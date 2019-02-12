@@ -1,0 +1,39 @@
+.product-gallery {
+	&_min {
+		cursor: pointer;
+		.slick-list {
+			padding-left: 1px;
+			padding-right: 1px;
+		}
+		.product-gallery__itm {
+			padding: 4px;
+			margin-bottom: 12px;
+			&.slick-current  {
+				position: relative;
+				&:before {
+					position: absolute;
+					content: " ";
+					width: 100%;
+					height: 100%;
+					left: 0; right: 0; top: 0; bottom: 0;
+					opacity: 0.45;
+					background-color: $primary;
+					transition: $animation-time-md;
+				}
+			}
+		}
+	}
+
+	&_big {
+		.slick-next, .slick-prev {
+			top: 103%;
+		}
+	}
+	&__itm {
+		img {
+			width: 100%;
+		}
+	}
+}
+
+@import "product-gallery-mediaqueries";

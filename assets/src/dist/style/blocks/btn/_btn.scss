@@ -1,0 +1,47 @@
+.btn {
+    &_radius {
+        border-radius: 0.75rem;
+    }
+
+    &_radius_lg {
+        border-radius: 1.25rem;
+    }
+    &_purple {
+        background-color: $purple;
+        color: white;
+
+        &:hover,
+        &:focus {
+            background-color: darken($purple, 15%);
+            border-color:  darken($purple, 15%);
+            color: white;
+        }
+        &:focus {
+            box-shadow: 0 0 0 0.2rem rgba(189, 140, 191, .5);
+        }
+    }
+}
+
+.btn-secondary {
+    background-color: white;
+    color: $primary;
+    border-color: $primary;
+
+    &:hover,
+    &:focus {
+        color: white;
+        border-color: $primary;
+        background-color: $primary;
+    }
+    &:focus {
+    	box-shadow: 0 0 0 0.2rem rgba(13, 110, 255, .5);
+    }
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-secondary.dropdown-toggle:focus {
+	background-color: darken($primary, 15%);
+    border-color: darken($primary, 15%);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 255, .5);
+}

@@ -1,0 +1,7 @@
+@media (max-width: $screen-width-xs) {
+	.seller-info {
+		&__content {
+			flex-direction: column;
+		}
+	}
+}

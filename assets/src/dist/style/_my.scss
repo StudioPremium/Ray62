@@ -1,0 +1,100 @@
+//ШРИФТЫ
+@import "fonts/fonts";
+
+
+//ИКОНКИ
+@import "icons/icons";
+
+
+//ОБЩИЕ СТИЛИ ВСЕХ СТРАНИЦ
+
+//типографика
+@import "typography/typography";
+
+//БЛОКИ 
+
+// хедер
+@import "blocks/header/header";
+// логотип
+@import "blocks/logo/logo";
+// выпадающее меню
+@import "blocks/dropdown/dropdown";
+// поиск
+@import "blocks/search/search";
+// кнопка
+@import "blocks/btn/btn";
+// список ссылок для входа
+@import "blocks/enter-box/enter-box";
+// содержание страницы
+@import "blocks/page-content/page-content";
+// главный баннер
+@import "blocks/main-banner/main-banner";
+// секция
+@import "blocks/section/section";
+// единица каталога
+@import "blocks/catalog-itm/catalog-itm";
+// карточка товара
+@import "blocks/card-product/card-product";
+// список товаров
+@import "blocks/city-list/city-list";
+// список компаний
+@import "blocks/company-list/company-list";
+// новости
+@import "blocks/news/news";
+// дата
+@import "blocks/date/date";
+// футер
+@import "blocks/footer/footer";
+// собственные стили слайдера
+@import "blocks/slick-carousel/slick-carousel";
+// модальное окно 
+@import "blocks/modal/modal";
+// модальное окно с выбором региона
+@import "blocks/modal-region/modal-region";
+// мобильное меню
+@import "blocks/mobile-menu/mobile-menu";
+// выбор локации
+@import "blocks/area-switcher/area-switcher";
+// ссылка для смены
+@import "blocks/link-switch/link-switch";
+// хлебные крошки
+@import "blocks/breadcrumb/breadcrumb";
+// карточка новостей
+@import "blocks/news/card-news";
+// заголовок карточки
+@import "blocks/card-title/card-title";
+// рекламный блок
+@import "blocks/ad-unit/ad-unit";
+// пагинация
+@import "blocks/pagination/pagination";
+// галерея товара
+@import "blocks/product-gallery/product-gallery";
+// состояние товара
+@import "blocks/product-condition/product-condition";
+// информация о продавце
+@import "blocks/seller-info/seller-info";
+// Рейтинг
+@import "blocks/rating/rating";
+// ссылка
+@import "blocks/link/link";
+// ссылка
+@import "blocks/nav-pills/nav-pills";
+// всплывающие окна
+@import "blocks/toast-box/toast-box";
+// модальное окно заказа в 1 клик
+@import "blocks/modal-order/modal-order";
+// форма
+@import "blocks/form/form";
+
+// УТИЛИТЫ
+// пространство
+@import "utilities/utilities";
+
+// jquery-ui
+@import "jquery-ui/_jquery-ui";
+
+// СТРАНИЦЫ
+// главная
+@import "pages/index/index";
+// детальная карточка товара
+@import "pages/product-page/product-page";

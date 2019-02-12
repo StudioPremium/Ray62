@@ -15,39 +15,39 @@ var autoprefixerList = [
 var path = {
     prodaction: {
         html:  'assets/prodaction/',
-        js:    'assets/prodaction/js/',
-        css:   'assets/prodaction/css/',
-        img:   'assets/prodaction/img/',
-        fonts: 'assets/prodaction/fonts/'
+        js:    'assets/prodaction/dist/js/',
+        css:   'assets/prodaction/dist/css/',
+        img:   'assets/prodaction/dist/img/',
+        fonts: 'assets/prodaction/dist/fonts/'
     },
     prodactionSrc: {
         html:  'assets/build/*.html',
-        js:    ['assets/build/js/main.js', 'assets/build/js/critical.js'],
-        css:   'assets/build/css/main.css',
-        img:   'assets/build/img/**/*.*',
-        fonts: 'assets/build/fonts/**/*.*'
+        js:    ['assets/build/dist/js/main.js', 'assets/build/dist/js/critical.js'],
+        css:   'assets/build/dist/css/main.css',
+        img:   'assets/build/dist/img/**/*.*',
+        fonts: 'assets/build/dist/fonts/**/*.*'
     },
     prodactionClean:     './assets/prodaction',
     build: {
         html:  'assets/build/',
-        js:    'assets/build/js/',
-        css:   'assets/build/css/',
-        img:   'assets/build/img/',
-        fonts: 'assets/build/fonts/'
+        js:    'assets/build/dist/js/',
+        css:   'assets/build/dist/css/',
+        img:   'assets/build/dist/img/',
+        fonts: 'assets/build/dist/fonts/'
     },
     src: {
         html:  'assets/src/*.html',
-        js:    ['assets/src/js/main.js', 'assets/src/js/critical.js'],
-        style: 'assets/src/style/main.scss',
-        img:   'assets/src/img/**/*.*',
-        fonts: 'assets/src/fonts/**/*.*'
+        js:    ['assets/src/dist/js/main.js', 'assets/src/dist/js/critical.js'],
+        style: 'assets/src/dist/style/main.scss',
+        img:   'assets/src/dist/img/**/*.*',
+        fonts: 'assets/src/dist/fonts/**/*.*'
     },
     watch: {
         html:  'assets/src/**/*.html',
-        js:    'assets/src/js/**/*.js',
-        css:   'assets/src/style/**/**/*.scss',
-        img:   'assets/src/img/**/*.*',
-        fonts: 'assets/srs/fonts/**/*.*'
+        js:    'assets/src/dist/js/**/*.js',
+        css:   'assets/src/dist/style/**/**/*.scss',
+        img:   'assets/src/dist/img/**/*.*',
+        fonts: 'assets/srs/dist/fonts/**/*.*'
     },
     clean:     './assets/build'
 };
@@ -171,7 +171,7 @@ gulp.task('clean:prodaction', function () {
 gulp.task('critical', function() {
   return gulp
     .src('assets/build/*.html')
-    .pipe(critical({base: 'assets/build/', inline: true, css: ['assets/build/css/main.css']}))
+    .pipe(critical({base: 'assets/build/', inline: true, css: ['assets/build/dist/css/main.css']}))
     .on('error', function(err) {
       log.error(err.message);
     })

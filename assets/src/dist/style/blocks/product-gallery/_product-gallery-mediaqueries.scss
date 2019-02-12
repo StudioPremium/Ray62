@@ -1,0 +1,12 @@
+@media (max-width: $screen-width-sm) {
+	.product-gallery {
+		&_min {
+			.product-gallery__itm {
+				margin-bottom: 0;
+				&.slick-current  {
+					border: none;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+.toast-box {
+	top: 10px;
+	right: 10px;
+	position: fixed;
+	z-index: 100;
+	max-width: 350px;
+	width: 100%;
+	.toast.show {
+		z-index: 1000;
+	}
+
+}
+
+@import "toast-box-mediaqueries";

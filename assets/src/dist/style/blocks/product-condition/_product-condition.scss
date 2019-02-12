@@ -1,0 +1,23 @@
+.product-condition {
+	padding-left: 2.5rem;
+	background-repeat: no-repeat;
+	background-position: center left;
+	padding-top: 0.625rem;
+	padding-bottom: 0.625rem;
+	display: flex;
+	align-items: center;
+	&_stock_in {
+		background-image: url(../img/good-in-stock.png);
+
+		.product-condition__text {
+			color: $success;
+		}
+	}
+
+	&_stock_out {
+		background-image: url(../img/good-out-stock.png);
+		.product-condition__text {
+			color: $red;
+		}
+	}
+}
