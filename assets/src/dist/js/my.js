@@ -13,4 +13,7 @@ $(document).ready(function() {
 //= toast/toast.js
 
 // Импортируем добавление товара
-//= adding/adding.js
+//= goods/goods.js
+
+// Импортируем добавление товара
+//= form-order/form-order.js
