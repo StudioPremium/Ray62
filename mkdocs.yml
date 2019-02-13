@@ -1,5 +1,6 @@
-site_name: Ray62
+site_name: Документация по front-end части Биржи оборудования
 pages:
 - Home: 'index.md'
 - Scripts:
-    - 'Взаимодействие с товаром': 'goodsInteraction.md'
+    - 'Взаимодействие с товаром': 'scripts/goodsInteraction.md'
+theme: readthedocs
