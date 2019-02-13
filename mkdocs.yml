@@ -1,0 +1,5 @@
+site_name: Ray62
+pages:
+- Home: 'index.md'
+- Scripts:
+    - 'Взаимодействие с товаром': 'goodsInteraction.md'
