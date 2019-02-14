@@ -20,4 +20,8 @@
 	}
 }
 
+.bg-primary-900 {
+	background-color: lighten($primary, 40%);
+}
+
 @import "utilities-mediaqueries";

@@ -8,45 +8,23 @@
                 </button>
             </div>
             <div class="modal-body modal-order__content">
-                <form name="order" class="form" method="post" action="order.php">
-                    <div class="form-group">
-                        <label for="orderInputSecondName">Фамилия</label>
-                        <input name="orderSecondName" type="text" class="form-control" id="orderInputSecondName" placeholder="Ваша фамилия">
-                    </div>
+                <form name="order" class="form form_order" method="post" action="order.php">
                     <div class="form-group">
                         <label for="orderInputName">Имя</label>
-                        <input name="orderName" type="text" class="form-control" id="orderInputName" placeholder="Ваше имя">
-                    </div>
-                    <div class="form-group">
-                        <label for="orderInputPatronymic">Отчество</label>
-                        <input name="orderPatronymic" type="text" class="form-control" id="orderInputPatronymic" placeholder="Ваше отчество">
+                        <input name="name" type="text" class="form-control" id="orderInputName" placeholder="Ваше имя" required>
+                        <div class="error-box"></div>
                     </div>
                     <div class="form-group">
                         <label for="orderInputPatronymic">Телефон</label>
-                        <input name="orderTel" type="tel" class="form-control" id="orderInputTel" placeholder="Ваше телефон">
+                        <input name="tel" type="tel" class="form-control" id="orderInputTel" placeholder="Ваше телефон" required autocomplete="off">
                     </div>
                     <div class="form-group">
                         <label for="orderInputEmail">Электонная почта</label>
-                        <input name="orderEmail" type="email" class="form-control" id="orderInputEmail" placeholder="Ваш e-mail">
-                    </div>
-                    <div class="form-group">
-                        <label for="orderInputCompanyName">Наименование компании</label>
-                        <input name="orderCompanyName" type="text" class="form-control" id="orderInputCompanyName" placeholder="Название вашей компании">
-                    </div>
-                    <div class="form-group">
-                        <label for="orderInputTaxNumber">ИНН / КПП</label>
-                        <input name="orderTaxNumber" type="text" class="form-control" id="orderInputTaxNumber" placeholder="Ваш ИНН или КПП">
-                    </div>
-                    <div class="form-group">
-                        <label for="orderInputRegistrationNumber">ОГРН</label>
-                        <input name="orderRegistrationNumber" type="text" class="form-control" id="orderInputRegistrationNumber" placeholder="Ваш ОГРН">
-                    </div>
-                    <div class="form-group mb-3">
-                        <label for="orderInputAddress">Адрес</label>
-                        <input name="orderAddress" type="text" class="form-control" id="orderInputAddress" placeholder="Адрес доставки">
+                        <input name="email" type="email" class="form-control" id="orderInputEmail" placeholder="Ваш e-mail" required>
+                        <div class="error-box"></div>
                     </div>
                     <div class="mb-3">нажимая кнопку "Отправить" вы соглашаетесь с <a href="#">политикой конфиденциальности</a></div>
-                    <button type="submit" class="btn btn-primary">Отправить</button>
+                    <button type="submit" class="btn btn-primary" disabled>Отправить</button>
                 </form>
             </div>
         </div>

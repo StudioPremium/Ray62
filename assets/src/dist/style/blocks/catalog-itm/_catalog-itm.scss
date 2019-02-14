@@ -19,6 +19,17 @@
 			}
 		}
 	}
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		font-weight: 600;
+	}
+	&__itm {
+		margin-bottom: 0.5rem;
+	}
 }
+
+
 
 @import "catalog-itm-mediaqueries";

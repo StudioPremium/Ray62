@@ -22,334 +22,31 @@
                     <!--/Импортируем хлебные крошки-->
                 </div>
             </div>
-            <section class="row flex-column-reverse flex-lg-row">
-                <aside class="col-lg-3 col-12">
-                    <div class="row">
-                        <div class="col-lg-12 col-sm-4">
-                            <div class="mb-4">
-                                <!--Импортируем рекламный блок-->
-                                //= dist/template/ad-unit/ad-unit.html
-                                <!--/Импортируем рекламный блок-->
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-sm-4">
-                            <div class="mb-4">
-                                <!--Импортируем рекламный блок-->
-                                //= dist/template/ad-unit/ad-unit.html
-                                <!--/Импортируем рекламный блок-->
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-sm-4">
-                            <div class="mb-4">
-                                <!--Импортируем рекламный блок-->
-                                //= dist/template/ad-unit/ad-unit.html
-                                <!--/Импортируем рекламный блок-->
-                            </div>
-                        </div>
+            <section class="mb-5 product-itm" data-product-id="1">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="h1">Акции</h1>
                     </div>
-                </aside>
-                <div class="col-lg-9 col-12">
-                    <div class="row">
-                        <div class="col-12">
-                            <h1 class="h1">Акции</h1>
-                        </div>
-                        <div class="col-12">
-                            <div class="mb-5">
-                                <!--Импортируем карточку с новостями-->
-                                //= dist/template/card-news/card-news.html
-                                <!--/Импортируем карточку с новостями-->
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <aside class="aside bg-primary-900">
+                            <div class="filter filter_type_vertical aside__element bg-primary-900">
+                                <h4 class="filter__title">Подбор по параметрам</h5>
+                                <div class="filter__group">
+                                    <h5 class="filter__caption">Цена</h5>
+                                    <div class="input-group filter__input-group">
+                                        <input type="text" class="form-control filter__input js-filter_price_min" data-val-min="0" value="0"> - <input type="text" class="form-control filter__input js-filter_price_max" data-val-max="5000000" value="2000000">
+                                    </div>
+                                    <div id="slider_price" class="jq-ui-slider mt-4"></div>
+                                </div>
                             </div>
-                            <div class="mb-5">
-                                <!--Импортируем карточку с новостями-->
-                                //= dist/template/card-news/card-news.html
-                                <!--/Импортируем карточку с новостями-->
-                            </div>
-                            <div class="mb-5">
-                                <!--Импортируем карточку с новостями-->
-                                //= dist/template/card-news/card-news.html
-                                <!--/Импортируем карточку с новостями-->
-                            </div>
-                            <div class="mb-5">
-                                <!--Импортируем карточку с новостями-->
-                                //= dist/template/card-news/card-news.html
-                                <!--/Импортируем карточку с новостями-->
-                            </div>
-                            <div class="mb-5">
-                                <!--Импортируем карточку с новостями-->
-                                //= dist/template/card-news/card-news.html
-                                <!--/Импортируем карточку с новостями-->
-                            </div>
-                            <div class="mb-5">
-                                <!--Импортируем карточку с новостями-->
-                                //= dist/template/card-news/card-news.html
-                                <!--/Импортируем карточку с новостями-->
-                            </div>
-                            <div class="mb-5">
-                                <!--Импортируем карточку с новостями-->
-                                //= dist/template/card-news/card-news.html
-                                <!--/Импортируем header-->
-                            </div>
-                            <div class="mb-5">
-                                <!--Импортируем карточку с новостями-->
-                                //= dist/template/card-news/card-news.html
-                                <!--/Импортируемкарточку с новостями-->
-                            </div>
-                            <div class="mb-5">
-                                <!--Импортируем карточку с новостями-->
-                                //= dist/template/card-news/card-news.html
-                                <!--/Импортируем карточку с новостями-->
-                            </div>
-                            <div class="mb-5">
-                                <!--Импортируем карточку с новостями-->
-                                //= dist/template/card-news/card-news.html
-                                <!--/Импортируем карточку с новостями-->
-                            </div>
-                        </div>
-                        <div class="col-12 mb-5">
-                            <!--Импортируем пагинацию-->
-                            //= dist/template/pagination/pagination.html
-                            <!--/Импортируем пагинацию-->
-                        </div>
+                        </aside>
                     </div>
                 </div>
             </section>
         </div>
     </div>
-    <section class="section section_grey">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="h2 text-uppercase mb-5">Ранее просмотренные объявления</h2>
-                    </div>
-                </div>
-                <div class="row" id="products">
-                    <div class="col-xl-3 col-md-4 col-sm-6 pb-3 pt-3">
-                        <div class="card-product">
-                            <div class="card-product__img">
-                                <img class="img-fluid" src="dist/img/card-product-img.jpg" alt="Токарный станок с ЧПУ" title="Токарный станок с ЧПУ">
-                            </div>
-                            <div class="card-product__content">
-                                <h5 class="card-product__title">Токарный станок с ЧПУ HAAS SL20TCE</h5>
-                                <table class="card-product__specifications">
-                                    <tbody>
-                                        <tr>
-                                          <th scope="row">Модель</th>
-                                          <td>SL20TCE</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Год производства</th>
-                                          <td>Jacob</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Местоположение</th>
-                                          <td>Архангельск</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="card-product__footer">
-                                    <span class="card-product__price">
-                                        <span>1 370 000</span> р.
-                                    </span>
-                                    <a href="#" class="btn btn-secondary btn_radius_lg">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6 pb-3 pt-3">
-                        <div class="card-product">
-                            <div class="card-product__img">
-                                <img class="img-fluid" src="dist/img/card-product-img.jpg" alt="Токарный станок с ЧПУ" title="Токарный станок с ЧПУ">
-                            </div>
-                            <div class="card-product__content">
-                                <h5 class="card-product__title">Токарный станок с ЧПУ HAAS SL20TCE</h5>
-                                <table class="card-product__specifications">
-                                    <tbody>
-                                        <tr>
-                                          <th scope="row">Модель</th>
-                                          <td>SL20TCE</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Год производства</th>
-                                          <td>Jacob</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Местоположение</th>
-                                          <td>Архангельск</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="card-product__footer">
-                                    <span class="card-product__price">
-                                        <span>1 370 000</span> р.
-                                    </span>
-                                    <a href="#" class="btn btn-secondary btn_radius_lg">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6 pb-3 pt-3">
-                        <div class="card-product">
-                            <div class="card-product__img">
-                                <img class="img-fluid" src="dist/img/card-product-img.jpg" alt="Токарный станок с ЧПУ" title="Токарный станок с ЧПУ">
-                            </div>
-                            <div class="card-product__content">
-                                <h5 class="card-product__title">Токарный станок с ЧПУ HAAS SL20TCE</h5>
-                                <table class="card-product__specifications">
-                                    <tbody>
-                                        <tr>
-                                          <th scope="row">Модель</th>
-                                          <td>SL20TCE</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Год производства</th>
-                                          <td>Jacob</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Местоположение</th>
-                                          <td>Архангельск</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="card-product__footer">
-                                    <span class="card-product__price">
-                                        <span>1 370 000</span> р.
-                                    </span>
-                                    <a href="#" class="btn btn-secondary btn_radius_lg">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6 pb-3 pt-3">
-                        <div class="card-product">
-                            <div class="card-product__img">
-                                <img class="img-fluid" src="dist/img/card-product-img.jpg" alt="Токарный станок с ЧПУ" title="Токарный станок с ЧПУ">
-                            </div>
-                            <div class="card-product__content">
-                                <h5 class="card-product__title">Токарный станок с ЧПУ HAAS SL20TCE</h5>
-                                <table class="card-product__specifications">
-                                    <tbody>
-                                        <tr>
-                                          <th scope="row">Модель</th>
-                                          <td>SL20TCE</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Год производства</th>
-                                          <td>Jacob</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Местоположение</th>
-                                          <td>Архангельск</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="card-product__footer">
-                                    <span class="card-product__price">
-                                        <span>1 370 000</span> р.
-                                    </span>
-                                    <a href="#" class="btn btn-secondary btn_radius_lg">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6 pb-3 pt-3">
-                        <div class="card-product">
-                            <div class="card-product__img">
-                                <img class="img-fluid" src="dist/img/card-product-img.jpg" alt="Токарный станок с ЧПУ" title="Токарный станок с ЧПУ">
-                            </div>
-                            <div class="card-product__content">
-                                <h5 class="card-product__title">Токарный станок с ЧПУ HAAS SL20TCE</h5>
-                                <table class="card-product__specifications">
-                                    <tbody>
-                                        <tr>
-                                          <th scope="row">Модель</th>
-                                          <td>SL20TCE</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Год производства</th>
-                                          <td>Jacob</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Местоположение</th>
-                                          <td>Архангельск</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="card-product__footer">
-                                    <span class="card-product__price">
-                                        <span>1 370 000</span> р.
-                                    </span>
-                                    <a href="#" class="btn btn-secondary btn_radius_lg">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6 pb-3 pt-3">
-                        <div class="card-product">
-                            <div class="card-product__img">
-                                <img class="img-fluid" src="dist/img/card-product-img.jpg" alt="Токарный станок с ЧПУ" title="Токарный станок с ЧПУ">
-                            </div>
-                            <div class="card-product__content">
-                                <h5 class="card-product__title">Токарный станок с ЧПУ HAAS SL20TCE</h5>
-                                <table class="card-product__specifications">
-                                    <tbody>
-                                        <tr>
-                                          <th scope="row">Модель</th>
-                                          <td>SL20TCE</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Год производства</th>
-                                          <td>Jacob</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Местоположение</th>
-                                          <td>Архангельск</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="card-product__footer">
-                                    <span class="card-product__price">
-                                        <span>1 370 000</span> р.
-                                    </span>
-                                    <a href="#" class="btn btn-secondary btn_radius_lg">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-4 col-sm-6 pb-3 pt-3">
-                        <div class="card-product">
-                            <div class="card-product__img">
-                                <img class="img-fluid" src="dist/img/card-product-img.jpg" alt="Токарный станок с ЧПУ" title="Токарный станок с ЧПУ">
-                            </div>
-                            <div class="card-product__content">
-                                <h5 class="card-product__title">Токарный станок с ЧПУ HAAS SL20TCE</h5>
-                                <table class="card-product__specifications">
-                                    <tbody>
-                                        <tr>
-                                          <th scope="row">Модель</th>
-                                          <td>SL20TCE</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Год производства</th>
-                                          <td>Jacob</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Местоположение</th>
-                                          <td>Архангельск</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="card-product__footer">
-                                    <span class="card-product__price">
-                                        <span>1 370 000</span> р.
-                                    </span>
-                                    <a href="#" class="btn btn-secondary btn_radius_lg">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 	<!--Импортируем футер-->
 	//= dist/template/footer/footer.html
 	<!--/Импортируем футер-->
@@ -357,9 +54,10 @@
     //= dist/template/modal-region/modal-region.html
     <!--/Импортируем модальное окно регионов-->
     <script src="dist/js/critical.js"></script>
-    <script src="dist/js/main.js" async></script>
+    <script src="dist/js/main.js"></script>
     <script>
         $(document).ready(function() {
+
             $( function() {
                 // Массив с названием городов
                 var availableTags = [
@@ -402,39 +100,6 @@
                 });
 
             });
-            // слайдер с ранее просмотренным
-             $('#products').slick({
-                dots: false,
-                infinite: false,
-                slidesToShow: 4,
-                speed: 400,
-                slidesToScroll: 1,
-                swipeToSlide: true,
-                autoplay: false,
-                draggable: false,
-                arrows: true,
-                responsive: [
-                {
-                  breakpoint: 1200,
-                  settings: {
-                    slidesToShow: 3
-                  }
-                },
-                {
-                  breakpoint: 768,
-                  settings: {
-                    slidesToShow: 2
-                  }
-                },
-                {
-                  breakpoint: 576,
-                  settings: {
-                    slidesToShow: 1
-                  }
-                }
-              ]
-            });
-
 
         });
     </script>

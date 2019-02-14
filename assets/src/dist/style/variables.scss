@@ -82,11 +82,6 @@ $btn-box-shadow: 0px 6px 5px 0px rgba(30, 93, 39, 0.22);
 //текст
 $text-color-grey: rgb(66, 66, 66);
 
-//футер
-//цвет фона футера
-$footer-bg-color: #292f2c;
-$footer-color: rgb(234, 234, 234);
-
 //ссылка
 
 //модальное окно
@@ -118,3 +113,23 @@ $mobile-menu-nav-link-border-color: darken($mobile-menu-bg-color, 15%);
 $mobile-menu-nav-link-color: white;
 //цвет оверлея на body при открытия мобильного меню
 $mobile-menu-body-overlay: #212529;
+
+
+// фильтр
+$filter-text-color: rgb(62, 78, 102);
+$filter-padding-x: 1.375rem;
+$filter-padding-y: 1.875rem;
+
+// jquery-ui-slider
+$ui-slider-border-radius: 0;
+$ui-slider-background-color: #fff;
+$ui-slider-border-color: #ced4da;
+$ui-slider-handle-border-radius: 50%;
+$ui-slider-handle-border-color: $primary;
+$ui-slider-handle-background-color: $primary;
+$ui-slider-handle-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+$ui-slider-handle-width: 1rem;
+$ui-slider-handle-height: 1rem;
+$ui-slider-handle-hover-color: darken($primary, 5%);
+$ui-slider-header-background-color: #5d6a7e;
+$ui-slider-horizontal-height: 0.25rem;

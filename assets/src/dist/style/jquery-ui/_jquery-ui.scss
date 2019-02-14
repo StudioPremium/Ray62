@@ -23,3 +23,36 @@
 		transform: translateY(1px);
 	}
 }
+.jq-ui-slider {
+	border-radius: $ui-slider-border-radius;
+	background-color: $ui-slider-background-color;
+	&.ui-widget-content {
+		border-color: $ui-slider-border-color;
+	}
+	.ui-slider-handle {
+		border-radius: $ui-slider-handle-border-radius;
+		border-color: $ui-slider-handle-border-color;
+		background-color: $ui-slider-handle-background-color;
+		box-shadow: $ui-slider-handle-box-shadow;
+		width: $ui-slider-handle-width;
+		height: $ui-slider-handle-height;
+		cursor: pointer;
+		&:focus {
+			outline: none;
+		}
+		&:hover,
+		&:focus {
+			background-color: $ui-slider-handle-hover-color;
+			border-color: $ui-slider-handle-hover-color;
+		}
+	}
+	.ui-widget-header {
+		background-color: $ui-slider-header-background-color;
+	}
+	&.ui-slider-horizontal {
+		height: $ui-slider-horizontal-height;
+		.ui-slider-handle {
+			top: -0.6em;
+		}
+	}
+}

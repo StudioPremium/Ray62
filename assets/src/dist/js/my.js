@@ -15,5 +15,14 @@ $(document).ready(function() {
 // Импортируем добавление товара
 //= goods/goods.js
 
-// Импортируем добавление товара
-//= form-order/form-order.js
+// Импортируем заказ в 1 клик
+//= order-one-click/order-one-click.js
+
+// Импортируем поведение форм
+//= form/form.js
+
+// Импортируем поведение форм
+//= valid-money/valid-money.js
+
+// Импортируем слайдер от jquery-ui
+//= slider-ui/slider-ui.js

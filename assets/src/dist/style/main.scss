@@ -38,12 +38,14 @@
 @import "../../../../node_modules/slick-carousel/slick/slick.scss";
 @import "../../../../node_modules/slick-carousel/slick/slick-theme.scss";
 
-// CSS Для jquery-ui
+// CSS Для jquery-ui (после иниализации перевести в .scss; удалить в этом файле)
 @import "../../../../node_modules/jquery-ui/themes/base/core";
+@import "../../../../node_modules/jquery-ui/themes/base/theme";
 @import "../../../../node_modules/jquery-ui/themes/base/autocomplete";
 @import "../../../../node_modules/jquery-ui/themes/base/menu";
+@import "../../../../node_modules/jquery-ui/themes/base/slider";
 
-// Служебные файлы для fancybox (иниализации перевести в .scss; удалить в этом файле @supports)
+// Служебные файлы для fancybox (после иниализации перевести в .scss; удалить в этом файле @supports)
 @import "../../../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox";
 
 // Подключение своих SCSS файлов

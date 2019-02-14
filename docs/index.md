@@ -1,17 +1,94 @@
-# Welcome to MkDocs
+# Документация по front-end Биржи оборудования "Луч"
 
-For full documentation visit [mkdocs.org](https://mkdocs.org).
+Репозиторий проекта на [GitHub](https://github.com/MaksimLavrenyuk/Ray62).
 
-## Commands
+## Установка
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+Для установки вам понадобится [Node.js](https://nodejs.org/en/) и [Gulp](https://gulpjs.com/)
 
-## Project layout
+* После клонирования репозитория в папке проекта выполнить `npm install`, эта команда выполнит установку всех зависимостей проекта;
+* Корневой каталог файлов проекта `/assets`, в нем находятся 3 папки: `src` - папка с рабочими файлами, `build` - собранная версия проекта, `prodaction` - продашн версия проекта. До первого выполнения `gulp` и `gulp prodaction` доступна только версия с рабочими файлами.
+* В файле `/assets/src/dist/style.main.scss` находятся комментарии о преобразовании ключевых файлов, выполнить их. Проблема в том, что Sass не поддерживает автоматическое преобразование .css в .scss. [Подробнее](https://sass-scss.ru/documentation/pravila_i_direktivi/direktiva_import.html) о том, как работает директива `@import` в Sass;
+* Для запуска build-версии проекта, в корне проекта выполнить: `gulp`;
+* Prodaction версия доступна после компиляции build-версии, для получения prodaction выполнить `gulp prodaction`;
+* Все таски для сборки находятся в файле `gulpfile.js`.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Используемые иструменты
+
+Все используемые плагины и библиотеки перечислены в файле `package.json` в разделе `devDependencies`. Sass используется с синтаксисом `scss`. 
+
+Для добавления критического css в `<head></head>` страницы используется [critical](https://github.com/addyosmani/critical). 
+
+Картинки загружаются лениво с помощью [lazyloadxt](https://www.npmjs.com/package/lazyloadxt).
+
+Для ключевых файлов `.js` и `.css` создается sourcemap
+
+Для сборки проекта используется Gulp.
+
+## Структура
+
+Данный проект, предполагает следующую структуру файлов:
+
+* Рабочие файлы находятся в папке `assets/src`, любые изменения должны проиходить только в этой папке, т.к. папки `build` и `prodaction` генерируются на основе нее;
+* `html` файлы хранятся непосредственно в папке `assets/src`, сопутствующие файлы, такие как `.scss`, `.js` `.jpg` и др. находятся в папке `assets/src/dist`;
+* Все необходимые файлы плагинов подлючаются с помощью [gulp-rigger](https://www.npmjs.com/package/gulp-rigger) из папки `node_modules`, для css - файлы подключаются с помощью sass директивы `@import`. Компилируются исходники в единые файлы, в случае с css это - `assets\build\dist\css\main.css`, для js - `assets\build\dist\js\critical.js` и `assets\build\dist\js\main.js`;
+* Части html кода импортируются с помощью [gulp-rigger](https://www.npmjs.com/package/gulp-rigger) в build версию html-файлов. Части находятся в папке `assets\src\dist\template`;
+
+### Структура css 
+
+Все рабочие файлы css находятся в папке `assets\src\dist\style`. 
+
+* Перечень главных подключаемых файлов, таких как файлы библиотек и плагинов, расположен в `assets\src\dist\style\main.scss`;
+* Перечень подключения своих расположен в файле `assets\src\dist\style\my.scss`;
+* Sass переменные расположены в файле `assets\src\dist\style\variables.scss`.
+
+Структура css - модульная, каждая сущность расположена в своем файле. Например стили для хедера страницы  - `style\block\header\_header.scss`, типографика `style\block\typography\_typography.scss` и т.д. Медиа запросы хранятся в папке блока. 
+
+Для более удобной навигации по `.scss` файлам, используйте sourcemap:
+
+![](../source-map.jpg) 
+
+#### Разделы css:
+
+* Блоки - `style\block\`;
+* Шрифты - `style\fonts\`;
+* Иконки - `style\icons\`;
+* Страницы (если требуются стили индивидуально для опр. страницы) - `style\pages\`;
+* Типографика - `style\typography\`;
+* Утилиты - `style\utilities\`;
+
+#### Медиа запросы
+
+Все медиа запросы сущности, хранятся в папке этой сущности. Для примера возьмем хедер страницы. Стили этого блока находятся в файле `style\blocks\header\_header.scss`, а медиа запросы хранятся в `style\blocks\header\_header-mediaqueries.scss`;
+
+### Структура JS 
+
+Сбор js предполагает создание 2 js файлов:
+
+* `js\critical.js` - Критические файлы, требущиеся для показа первого экрана страницы;
+* `js\main.js` - Некритические файлы плагинов и всего остального.
+
+Подключение файлов происходит посредством [gulp-rigger](https://www.npmjs.com/package/gulp-rigger). Перечни подключений:
+
+* `js\critical.js` и `js\main.js` что они подключают - сказано выше.
+* `js\my.js` - подключение самописных js файлов.
+
+Разбиение самописных js файлов так же происходит по типу модульности, например скрипты для формы обратной связи хранятся в файле `js\form\form.js`, для взаимодейтсвия с товаром `js\goods\goods.js` и т.п.
+
+Вызов плагинов происходит на требуемых страницах, например если на странице `index.html` мне нужен слайдер `slick`, перед закрывающим тегом `<body></body>` я добавляю скрипт `$('#products').slick({})` . Если плагин используется на всех страницах - пишу его вызов в файле `js\my.js`, например валидация телефона `$('[type="tel"]').mask("+7 (999) 999-99-99")`.
+
+### Шрифты 
+
+Шрифты хранятся в директории `dist\fonts`. Подключение шрифтов происходит по средствам директивы `@font-face`. Файл подлючения находится в `style\fonts\_fonts.scss`
+
+### Изображения 
+
+Все изображения хранятся в папке `dist\img`. В `build` и `prodaction` версии отправляются уже минифицированные варианты. Минифицируются `.png`, `.jpg` и `.svg` расширения
+
+### Серверные скрипты
+
+Все серверные скрипты располагаюстся в директории `dist\server`
+
+### html-блоки
+
+Все подлючаемые html-блоки расположены в папке `dist\template\`. Обычно там хранятся повторяющиеся куски кода, такие как хедер, футер, карточка товара и т.п.
