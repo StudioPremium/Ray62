@@ -1,0 +1,13 @@
+@media (max-width: $screen-width-xs) {
+    .snippet-card {
+        &_type_cell {
+            width: 100%;
+            .snippet-card__img {
+        		height: 70px;
+        	}
+        }
+        &__img {
+        	height: auto;
+        }
+    }
+}

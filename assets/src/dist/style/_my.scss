@@ -87,6 +87,22 @@
 @import "blocks/form/form";
 // фильтр
 @import "blocks/filter/filter";
+// checkbox форм
+@import "blocks/form-check/form-check";
+// панель фильтрации (сортировка, показ и т.п)
+@import "blocks/filter-panel/filter-panel";
+// cмена вариантов показа
+@import "blocks/view-switcher/view-switcher";
+// список позиций
+@import "blocks/snippet-list/snippet-list";
+// список карточка позиции
+@import "blocks/snippet-card/snippet-card";
+// список карточка позиции
+@import "blocks/filter-sorter/filter-sorter";
+// боковая панель
+@import "blocks/aside/aside";
+// Ярлык акции
+@import "blocks/stock-label/stock-label";
 
 // УТИЛИТЫ
 // пространство

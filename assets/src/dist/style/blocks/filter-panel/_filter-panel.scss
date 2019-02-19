@@ -1,0 +1,20 @@
+.filter-panel {
+	display: flex;
+	flex-wrap: wrap;
+	&__itm {
+		display: flex;
+		align-items: center;
+		& + & {
+			margin-left: 2.5rem;
+		}
+	}
+	&__title {
+		color: rgb(53, 53, 53);
+		margin-right: 1rem;
+	}
+	&__action {
+		display: flex;
+	}
+}
+
+@import "filter-panel-mediaqueries";

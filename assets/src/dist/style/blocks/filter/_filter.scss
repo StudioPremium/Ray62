@@ -30,4 +30,43 @@
 			margin-right: 0;
 		}
 	}
+
+	&__group {
+		margin-bottom: 1.25rem;
+	}
+
+	&__check {
+		margin-bottom: 0.25rem;
+	}
+	&__collapse {
+		background-color: transparent;
+		border-color: transparent;
+		padding: 0;
+		position: relative;
+			&::after {
+				display: inline-block;
+				position: relative;
+				right: -10px;
+				content: "";
+				width: 11px;
+				height: 6px;
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				background-position: center;
+				background-image: url(../img/arrow-top.png);
+			}
+			&.show {
+				&::after {
+					background-image: url(../img/arrow-top.png);
+				}
+			}
+			&.collapsed {
+				&::after {
+					background-image: url(../img/arrow-bottom.png);
+				}
+			}
+		&:focus {
+			outline: none;
+		}
+	}
 }

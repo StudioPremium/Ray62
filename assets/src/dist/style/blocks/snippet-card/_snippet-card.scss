@@ -1,0 +1,51 @@
+.snippet-card {
+	display: flex;
+	align-items: center;
+	background-color: #f7f7f7;
+	padding: 1rem;
+	justify-content: space-between;
+	&:hover,
+	&:focus {
+		background-color: darken(#f7f7f7, 5%);
+		text-decoration: none;
+	}
+	&_type_row {
+
+	}
+	&_type_cell {
+		flex-direction: column;
+		width: calc(50% - 8px);
+		text-align: center;
+		.snippet-card__title {
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+		}
+	}
+
+	&__img {
+		width: 83px;
+		height: 70px;
+		img {
+			width: 100%;
+		}
+	}
+	&__title {
+		color: rgb(36, 36, 36);
+		margin-bottom: 0;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		font-size: 0.875rem;
+		font-weight: 600;
+		overflow: hidden;
+		text-overflow: ellipsis;
+    	white-space: nowrap;
+    	max-width: 100%;
+
+	}
+	&__article {
+		font-size: 0.875rem;
+		color: $orange;
+	}
+}
+
+@import "snippet-card-mediaqueries";

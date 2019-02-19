@@ -1,5 +1,5 @@
 site_name: Документация по front-end части Биржи оборудования
-nav:
+pages:
 - Главная: index.md
 - Скрипты: scripts/goodsInteraction.md
 - Страницы: pages/index.md

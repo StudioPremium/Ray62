@@ -26,3 +26,6 @@ $(document).ready(function() {
 
 // Импортируем слайдер от jquery-ui
 //= slider-ui/slider-ui.js
+
+// Смена вариантов показа
+//= view-switcher/view-switcher.js

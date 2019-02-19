@@ -13,15 +13,15 @@ var autoprefixerList = [
 ];
 /* пути к исходным файлам (src), к готовым файлам (build), а также к тем, за изменениями которых нужно наблюдать (watch) */
 var path = {
-    prodaction: {
-        html:  'assets/prodaction/',
-        js:    'assets/prodaction/dist/js/',
-        css:   'assets/prodaction/dist/css/',
-        img:   'assets/prodaction/dist/img/',
-        fonts: 'assets/prodaction/dist/fonts/',
-        server: 'assets/prodaction/dist/server/'
+    production: {
+        html:  'assets/production/',
+        js:    'assets/production/dist/js/',
+        css:   'assets/production/dist/css/',
+        img:   'assets/production/dist/img/',
+        fonts: 'assets/production/dist/fonts/',
+        server: 'assets/production/dist/server/'
     },
-    prodactionSrc: {
+    productionSrc: {
         html:  'assets/build/*.html',
         js:    ['assets/build/dist/js/main.js', 'assets/build/dist/js/critical.js'],
         css:   'assets/build/dist/css/main.css',
@@ -29,7 +29,7 @@ var path = {
         fonts: 'assets/build/dist/fonts/**/*.*',
         server: 'assets/build/dist/server/**/*.*'
     },
-    prodactionClean:     './assets/prodaction',
+    productionClean:     './assets/production',
     build: {
         html:  'assets/build/',
         js:    'assets/build/dist/js/',
@@ -158,9 +158,9 @@ gulp.task('clean:build', function () {
 // сборка в продакш
 // выявление критических стлей
 
-// удаление каталога prodaction 
-gulp.task('clean:prodaction', function () {
-    del.sync(path.prodactionClean);
+// удаление каталога production 
+gulp.task('clean:production', function () {
+    del.sync(path.productionClean);
 });
 
 gulp.task('critical', function() {
@@ -170,31 +170,31 @@ gulp.task('critical', function() {
     .on('error', function(err) {
       log.error(err.message);
     })
-    .pipe(gulp.dest('assets/prodaction'));
+    .pipe(gulp.dest('assets/production'));
 });
 
-// перенос стилей из build в prodaction
-gulp.task('css:prodaction', function () {
-    gulp.src(path.prodactionSrc.css) // получим main.scss
-        .pipe(gulp.dest(path.prodaction.css)); // выгружаем в prodaction
+// перенос стилей из build в production
+gulp.task('css:production', function () {
+    gulp.src(path.productionSrc.css) // получим main.scss
+        .pipe(gulp.dest(path.production.css)); // выгружаем в production
 });
 
-// перенос js из build в prodaction
-gulp.task('js:prodaction', function () {
-    gulp.src(path.prodactionSrc.js) // получим файл main.js
-        .pipe(gulp.dest(path.prodaction.js));// положим готовый файл
+// перенос js из build в production
+gulp.task('js:production', function () {
+    gulp.src(path.productionSrc.js) // получим файл main.js
+        .pipe(gulp.dest(path.production.js));// положим готовый файл
 });
 
-// перенос шрифтов из build в prodaction
-gulp.task('fonts:prodaction', function() {
-    gulp.src(path.prodactionSrc.fonts)
-        .pipe(gulp.dest(path.prodaction.fonts));
+// перенос шрифтов из build в production
+gulp.task('fonts:production', function() {
+    gulp.src(path.productionSrc.fonts)
+        .pipe(gulp.dest(path.production.fonts));
 });
 
 // перенос картинок из build в продакшн
-gulp.task('image:prodaction', function () {
-    gulp.src(path.prodactionSrc.img) // путь с исходниками картинок
-        .pipe(gulp.dest(path.prodaction.img)); // выгрузка готовых файлов
+gulp.task('image:production', function () {
+    gulp.src(path.productionSrc.img) // путь с исходниками картинок
+        .pipe(gulp.dest(path.production.img)); // выгрузка готовых файлов
 });
 // очистка кэша
 gulp.task('cache:clear', function () {
@@ -212,13 +212,13 @@ gulp.task('build', [
     'server:build'
 ]);
 // продакшн
-gulp.task('prodaction', [
-    'clean:prodaction',
+gulp.task('production', [
+    'clean:production',
     'critical',
-    'css:prodaction',
-    'js:prodaction',
-    'fonts:prodaction',
-    'image:prodaction'
+    'css:production',
+    'js:production',
+    'fonts:production',
+    'image:production'
 ]);
 
 // запуск задач при изменении файлов

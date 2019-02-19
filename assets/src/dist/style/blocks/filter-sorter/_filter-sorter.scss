@@ -1,0 +1,11 @@
+.filter-sorter {
+	padding-right: 1.25rem;
+	background-position: right center;
+	background-repeat: no-repeat;
+	&_sort_desc {
+		background-image: url(../img/arrow-bottom.png);
+	}
+	&_sort_asc {
+		background-image: url(../img/arrow-top.png);
+	}
+}

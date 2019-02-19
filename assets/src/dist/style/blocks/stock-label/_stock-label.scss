@@ -1,0 +1,14 @@
+.stock-label {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 2;
+	padding: 0.375rem 0.75rem;
+	box-shadow: 0 7px 15px #5b5959;
+	&_color_yellow {
+		background-color: #f4db00;
+	}
+	&_color_grey {
+		background-color: #00f484;
+	}
+}

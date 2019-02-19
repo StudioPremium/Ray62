@@ -2,6 +2,9 @@
 	background-color: white;
 	box-shadow: 0 0 15px #5b5959;
 	padding: 0.875rem 0.875rem 1.5rem 0.875rem; 
+	&_stock {
+		position: relative;
+	}
 	&__title {
 		font-size: 1rem;
 		margin-top: 0.875rem;
