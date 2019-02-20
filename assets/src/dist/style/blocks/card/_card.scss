@@ -1,0 +1,64 @@
+.card {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fafafa;
+	padding: 1.125rem 1.5rem 2rem 1.5rem;
+	box-shadow: 0 7px 12px #acacac;
+	margin-bottom: 2rem;
+
+	&__left {
+		margin-right: 3rem;
+	}
+	&__right {
+		margin-left: 2rem;
+		width: 20%;
+	}
+	&__content {
+		font-size: 0.75rem;
+		max-width: 400px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&_type_vertical {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	&__title {
+		font-size: 0.875rem;
+		font-weight: bold;
+		text-decoration: underline;
+  		sline-height: 1.2;
+  		margin-bottom: 0.8125rem;
+	}
+	&__date {
+		font-size: 0.75rem;
+		color: rgb(68, 68, 68);
+	}
+	&__caption {
+		font-size: 0.875rem;
+		font-weight: normal;
+		margin-bottom: 1rem;
+		small {
+			margin-right: 1rem;
+		}
+	}
+	&__link {
+		font-size: 0.75rem;
+		color: rgb(68, 68, 68);
+		text-decoration: underline;
+	}
+	&__text {
+		
+	}
+	&__price {
+		display: inline-block;
+		font-size: 1rem;
+		color: rgb(53, 53, 53);
+  		font-weight: bold;
+  		margin-left: 1rem;
+	}
+}

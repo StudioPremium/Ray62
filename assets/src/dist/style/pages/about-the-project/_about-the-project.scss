@@ -1,0 +1,9 @@
+.about-the-project-content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	img {
+		max-width: 100%;
+        height: auto;
+	}
+}

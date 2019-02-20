@@ -103,6 +103,13 @@
 @import "blocks/aside/aside";
 // Ярлык акции
 @import "blocks/stock-label/stock-label";
+// Постраничная навигация
+@import "blocks/navigation/navigation";
+// Постраничная навигация
+@import "blocks/card/card";
+// контекстные сообщения обратной связи
+@import "blocks/alert/alert";
+
 
 // УТИЛИТЫ
 // пространство
@@ -116,3 +123,5 @@
 @import "pages/index/index";
 // детальная карточка товара
 @import "pages/product-page/product-page";
+// о проекте
+@import "pages/about-the-project/about-the-project";

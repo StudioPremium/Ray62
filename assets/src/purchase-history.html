@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>История заказов</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+    <!--Импортируем header-->
+    //= dist/template/header/header.html
+    <!--/Импортируем header-->
+	<div class="page-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!--Импортируем хлебные крошки-->
+                    //= dist/template/breadcrumb/breadcrumb.html
+                    <!--/Импортируем хлебные крошки-->
+                </div>
+            </div>
+            <section class="mb-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="h1">История заказов</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-12 mb-4 mb-md-0">
+                        <aside class="aside">
+                            <div class="aside__element">
+                                <!--Импортируем навигацию-->
+                                //= dist/template/navigation/navigation.html
+                                <!--/Импортируем навигацию-->
+                            </div>
+                            <div class="aside__element">
+                                <!--Импортируем рекламный блок-->
+                                //= dist/template/ad-unit/ad-unit.html
+                                <!--/Импортируем рекламный блок-->
+                            </div>
+                            <div class="aside__element">
+                                <!--Импортируем рекламный блок-->
+                                //= dist/template/ad-unit/ad-unit.html
+                                <!--/Импортируем рекламный блок-->
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card__left">
+                                        <h5 class="card__title">
+                                            <a href="#"><span>Заказ</span> №<span>4921</span></a>
+                                        </h5>
+                                        <span class="card__date">Дата - 30.11.2018 г.</span>
+                                    </div>
+                                    <div class="card__content">
+                                      <span class="card__text">Токарный станок с ЧПУ HAAS SL20TE</span>
+                                      <span class="card__price"><span>495 000</span> руб.</span>
+                                    </div>
+                                    <div class="card__right">
+                                        <div class="alert alert-danger" role="alert">
+                                          Ждет ответа
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card__left">
+                                        <h5 class="card__title">
+                                            <a href="#"><span>Заказ</span> №<span>4921</span></a>
+                                        </h5>
+                                        <span class="card__date">Дата - 30.11.2018 г.</span>
+                                    </div>
+                                    <div class="card__content card__content_type_vertical">
+                                        <h5 class="card__caption">
+                                            <small>Тема: </small>
+                                            <span>Не работает форма обратной связи</span>
+                                        </h5>
+                                        <a href="#" class="card__link">Посмотреть содержание</a>
+                                    </div>
+                                    <div class="card__right">
+                                        <div class="alert alert-success" role="alert">
+                                          Закрыто
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card__left">
+                                        <h5 class="card__title">
+                                            <a href="#"><span>Заказ</span> №<span>4921</span></a>
+                                        </h5>
+                                        <span class="card__date">Дата - 30.11.2018 г.</span>
+                                    </div>
+                                    <div class="card__content card__content_type_vertical">
+                                        <h5 class="card__caption">
+                                            <small>Тема: </small>
+                                            <span>Не работает форма обратной связи</span>
+                                        </h5>
+                                        <a href="#" class="card__link">Посмотреть содержание</a>
+                                    </div>
+                                    <div class="card__right">
+                                        <div class="alert alert-danger" role="alert">
+                                            Ждет ответа
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+        </div>
+    </div>
+  	<!--Импортируем футер-->
+  	//= dist/template/footer/footer.html
+  	<!--/Импортируем футер-->
+	 <!--Импортируем модальное окно регионов-->
+    //= dist/template/modal-region/modal-region.html
+    <!--/Импортируем модальное окно регионов-->
+    <script src="dist/js/critical.js"></script>
+    <script src="dist/js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $( function() {
+                // Массив с названием городов
+                var availableTags = [
+                  "Москва",
+                  "Санкт-Петербург",
+                  "Волгоград",
+                  "Воронеж",
+                  "Екатеринбург",
+                  "Казань",
+                  "Калуга",
+                  "Краснодар",
+                  "Нижний Новгород",
+                  "Новосибирск",
+                  "Ростов-на-Дону",
+                  "Самара",
+                  "Саратов",
+                  "Сочи",
+                  "Уфа",
+                  "Ярославль",
+                  "Киев",
+                  "Днепр",
+                  "Донецк",
+                  "Запорожье",
+                  "Кривой рог",
+                  "Львов",
+                  "Одесса",
+                  "Харьков",
+                  "Минск",
+                  "Брест",
+                  "Витебск",
+                  "Гомель",
+                  "Гродно",
+                  "Могилев",
+                  "Ташкент",
+                ];
+
+                // включаем автодополнение
+                $( "#cityes-search-input" ).autocomplete({
+                  source: availableTags
+                });
+
+            });
+        });
+    </script>
+</body>
+
+</html>

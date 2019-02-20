@@ -8,7 +8,6 @@
 	}
 	&_type_vertical {
 		flex-direction: column;
-		width: 100%;
 		.snippet-list__itm {
 			width: 100%;
 		}
@@ -16,8 +15,9 @@
 			display: flex;
 			justify-content: space-between;
 			&_stock {
+				padding: 2.5rem .875rem 2rem .875rem;
 				.card-product__title {
-					margin-top: 1.5rem;
+					margin-top: 0;
 				}
 			}
 			&__img {

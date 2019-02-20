@@ -33,9 +33,13 @@ $toast-border-radius: 0;
 $custom-control-indicator-size: 0.8125rem;
 $custom-control-gutter: 0.375rem;
 $custom-control-indicator-checked-bg: rgb(85, 85, 85);
- $custom-control-indicator-focus-border-color: rgb(85, 85, 85);
+$custom-control-indicator-focus-border-color: rgb(85, 85, 85);
 $custom-control-indicator-focus-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
 $custom-control-indicator-border-color: rgba(0, 0, 0, 0.4);
+$alert-padding-y: 0.375rem;
+$alert-padding-x: 2.125rem;
+$alert-border-radius: 1rem;
+$alert-margin-bottom: 0;
 
 
 // ПЕРЕОПРЕДЕЛЕНИЕ ДЕФОЛТНЫХ ЗНАЧЕНИЙ ПЕРЕМЕННЫХ SLICK-SLIDER 

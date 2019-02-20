@@ -34,14 +34,15 @@
 @import "../../../../node_modules/bootstrap/scss/toasts";
 // кастомные формы 
 @import "../../../../node_modules/bootstrap/scss/custom-forms";
-
+// алерты
+@import "../../../../node_modules/bootstrap/scss/alert";
 
 
 // CSS для slick-carousel
 @import "../../../../node_modules/slick-carousel/slick/slick.scss";
 @import "../../../../node_modules/slick-carousel/slick/slick-theme.scss";
 
-// CSS Для jquery-ui (после иниализации перевести в .scss; удалить в этом файле)
+// CSS Для jquery-ui (после иниализации перевести в .scss)
 @import "../../../../node_modules/jquery-ui/themes/base/core";
 @import "../../../../node_modules/jquery-ui/themes/base/theme";
 @import "../../../../node_modules/jquery-ui/themes/base/autocomplete";

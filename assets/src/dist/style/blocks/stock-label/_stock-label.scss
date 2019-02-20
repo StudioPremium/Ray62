@@ -1,10 +1,11 @@
 .stock-label {
 	position: absolute;
-	top: 0px;
-	right: 0px;
+	top: -1px;
+	right: -1px;
 	z-index: 2;
 	padding: 0.375rem 0.75rem;
-	box-shadow: 0 7px 15px #5b5959;
+	box-shadow: 0 2px 15px #5b5959;
+	text-align: center;
 	&_color_yellow {
 		background-color: #f4db00;
 	}
@@ -12,3 +13,5 @@
 		background-color: #00f484;
 	}
 }
+
+@import "stock-label-mediaqueries";

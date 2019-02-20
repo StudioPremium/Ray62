@@ -1,3 +1,18 @@
+@media (max-width: $screen-width-lg) {
+    .snippet-list {
+        &_type_grid {
+            .card-product {
+                &__footer {
+                    flex-direction: column;
+                }
+                &__price {
+                    margin-bottom: 0.875rem;
+                }
+            }
+
+        }
+    }
+}
 @media (max-width: $screen-width-md) {
     .snippet-list {
     	&_type_vertical {

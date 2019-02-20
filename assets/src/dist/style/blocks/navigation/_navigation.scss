@@ -1,0 +1,22 @@
+.navigation {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	&__itm {
+		border-left: 5px solid rgb(149, 149, 149);
+		padding: 0.25rem 0.5rem;
+		margin-bottom: 0.375rem;
+		&_type_active {
+			border-color: $primary;
+		}
+	}
+	&__link {
+		color: rgb(1, 1, 1);
+		font-weight: bold;
+		text-decoration: underline;
+		line-height: 1.2;
+	}
+}
+
