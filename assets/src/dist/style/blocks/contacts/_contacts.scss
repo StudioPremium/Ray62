@@ -1,0 +1,20 @@
+.contacts {
+	margin-bottom: 1.5rem;
+	&__title {
+		font-size: 1rem;
+		font-weight: bold;
+	}
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	&__text {
+		font-size: 0.875rem;
+		color: rgb(63, 63, 63);
+		line-height: 1.2;
+	}
+	&__itm {
+		margin-bottom: 0.25rem;
+	}
+}

@@ -1,0 +1,14 @@
+.contacts-page-content {
+	display: flex;
+	justify-content: space-between;
+	&__left {
+		width:45%;
+		padding-right: 15px; 
+	}
+	&__right {
+		width: 55%;
+		padding-left: 15px;
+	}
+}
+
+@import "contacts-page-content-mediaqueries";

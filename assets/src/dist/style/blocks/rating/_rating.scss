@@ -4,6 +4,20 @@
 	padding: 0;
 	display: flex;
 	align-items: flex-start;
+
+	&_size_min {
+
+		.rating__star {
+			width: 12px;
+			height: 12px;
+			background-position: -2px -69px;
+		}
+
+		.rating__star_full {
+			background-position: -18px -69px;
+		}
+	}
+
 	&__itm {
 		margin-left: 0.125rem;
 		margin-right: 0.125rem;
@@ -17,12 +31,12 @@
 	&__star {
 		display: inline-block;
 		background-repeat: no-repeat;
-		background-size: 100% 100%;
-		background-image: url(../img/star.png);
+		background-image: url(../img/ray-sprite.png);
+		background-position: -96px -41px;
 		width: 24px;
 		height: 24px;
 		&_full {
-			background-image: url(../img/star-full.png);
+			background-position: -127px -41px;
 		}
 	}
 }

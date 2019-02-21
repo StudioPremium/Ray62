@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+    <!--Импортируем header-->
+    //= dist/template/header/header.html
+    <!--/Импортируем header-->
+	<div class="page-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!--Импортируем хлебные крошки-->
+                    //= dist/template/breadcrumb/breadcrumb.html
+                    <!--/Импортируем хлебные крошки-->
+                </div>
+            </div>
+            <section class="mb-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="h1">Контакты</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-12 mb-4 mb-md-0">
+                        <aside class="aside">
+                            <div class="aside__element">
+                                <!--Импортируем навигацию-->
+                                //= dist/template/navigation/navigation.html
+                                <!--/Импортируем навигацию-->
+                            </div>
+                            <div class="aside__element">
+                              <a href="#" class="link-strong">Предложения партнеров</a>
+                            </div>
+                            <div class="aside__element">
+                                <!--Импортируем рекламный блок-->
+                                //= dist/template/ad-unit/ad-unit.html
+                                <!--/Импортируем рекламный блок-->
+                            </div>
+                            <div class="aside__element">
+                                <!--Импортируем рекламный блок-->
+                                //= dist/template/ad-unit/ad-unit.html
+                                <!--/Импортируем рекламный блок-->
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-12">
+                      <div class="contacts-page-content">
+                        <div class="contacts-page-content__left">
+                          <div class="contacts">
+                            <h5 class="contacts__title">По вопросам сотрудничества</h5>
+                            <ul class="contacts__list">
+                              <li class="contacts__itm">
+                                <a href="tel:+78000000000" class="contacts__text">8 800 000-00-00</a>
+                              </li>
+                              <li class="contacts__itm">
+                                <a href="mailto:partner@site.ru" class="contacts__text">partner@site.ru</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="contacts">
+                            <h5 class="contacts__title">Техническая поддержка</h5>
+                            <ul class="contacts__list">
+                              <li class="contacts__itm">
+                                <a href="tel:+78000000000" class="contacts__text">8 800 000-00-00</a>
+                              </li>
+                              <li class="contacts__itm">
+                                <a href="mailto:support@site.ru" class="contacts__text">support@site.ru</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="contacts">
+                            <h5 class="contacts__title">По вопросам оплаты</h5>
+                            <ul class="contacts__list">
+                              <li class="contacts__itm">
+                                <a href="tel:+78000000000" class="contacts__text">8 800 000-00-00</a>
+                              </li>
+                              <li class="contacts__itm">
+                                <a href="mailto:buh@site.ru" class="contacts__text">buh@site.ru</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="contacts-page-content__right">
+                          <div class="feedback">
+                            <h5 class="feedback__title">Написать нам</h5>
+                              <form name="feedback" class="form form_feedback" method="post" action="feedback.php">
+                                <div class="form-group">
+                                    <label for="feedbackInputName">Имя</label>
+                                    <input name="name" type="text" class="form-control" id="feedbackInputName" placeholder="Ваше имя" required>
+                                    <div class="error-box"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="feedbackInputTel">Телефон</label>
+                                    <input name="tel" type="tel" class="form-control" id="feedbackInputTel" placeholder="Ваше телефон" required autocomplete="off">
+                                </div>
+                                <div class="form-group">
+                                    <label for="feedbackTextarea">Сообщение</label>
+                                    <textarea class="form-control" id="feedbackTextarea" rows="5" placeholder="Вопрос"></textarea>
+                                </div>
+                                <div class="mb-3">нажимая кнопку "Отправить" вы соглашаетесь с <a href="#">политикой конфиденциальности</a></div>
+                                <button type="submit" class="btn btn-primary" disabled>Отправить</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+        </div>
+    </div>
+  	<!--Импортируем футер-->
+  	//= dist/template/footer/footer.html
+  	<!--/Импортируем футер-->
+	 <!--Импортируем модальное окно регионов-->
+    //= dist/template/modal-region/modal-region.html
+    <!--/Импортируем модальное окно регионов-->
+    <script src="dist/js/critical.js"></script>
+    <script src="dist/js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $( function() {
+                // Массив с названием городов
+                var availableTags = [
+                  "Москва",
+                  "Санкт-Петербург",
+                  "Волгоград",
+                  "Воронеж",
+                  "Екатеринбург",
+                  "Казань",
+                  "Калуга",
+                  "Краснодар",
+                  "Нижний Новгород",
+                  "Новосибирск",
+                  "Ростов-на-Дону",
+                  "Самара",
+                  "Саратов",
+                  "Сочи",
+                  "Уфа",
+                  "Ярославль",
+                  "Киев",
+                  "Днепр",
+                  "Донецк",
+                  "Запорожье",
+                  "Кривой рог",
+                  "Львов",
+                  "Одесса",
+                  "Харьков",
+                  "Минск",
+                  "Брест",
+                  "Витебск",
+                  "Гомель",
+                  "Гродно",
+                  "Могилев",
+                  "Ташкент",
+                ];
+
+                // включаем автодополнение
+                $( "#cityes-search-input" ).autocomplete({
+                  source: availableTags
+                });
+
+            });
+        });
+    </script>
+</body>
+
+</html>

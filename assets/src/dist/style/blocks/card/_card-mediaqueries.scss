@@ -1,16 +1,44 @@
 @media (max-width: $screen-width-lg) {
 	.card {
+		&_size_big {
+			.card__left {
+				width: 25.8%;
+			}
+		}
+		&__left {
+			width: 30%;
+		}
 		&__right {
 			margin-left: 1rem;
-    		width: 22%;
+    		width: 40%;
 		}
+
 	}
 }
 @media (max-width: $screen-width-md) {
 	.card {
 		flex-direction: column;
 		align-items: flex-start;
-		
+		position: relative;
+
+		&_size_big {
+			flex-direction: row;
+			align-items: center;
+			.card__content {
+				max-width: 300px;
+			}
+			.card__left {
+				width: auto;
+			}
+		}
+		&__btn {
+			&_type_close {
+				position: absolute;
+				top: 10px;
+				right: 13px;
+			}
+		}
+
 		&__left,
 		&__content {
 			margin-bottom: 1.25rem
@@ -18,11 +46,39 @@
 
 		&__left {
 			margin-right: 0rem;
+			width: auto;
 		}
 
 		&__right {
 			margin-left: 0rem;
 			width: auto;
+		}
+	}
+}
+
+@media (max-width: $screen-width-sm) {
+	.card {
+		&__content {
+			max-width: none;
+		}
+		&_size_big {
+			flex-wrap: wrap;
+			.card__price {
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-width-xs) {
+	.card {
+		&__content {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		&__price {
+			margin-left: 0;
+			margin-top: 0.5rem;
 		}
 	}
 }

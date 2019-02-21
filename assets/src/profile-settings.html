@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Настройки профиля</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+    <!--Импортируем header-->
+    //= dist/template/header/header.html
+    <!--/Импортируем header-->
+    <div class="page-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!--Импортируем хлебные крошки-->
+                    //= dist/template/breadcrumb/breadcrumb.html
+                    <!--/Импортируем хлебные крошки-->
+                </div>
+            </div>
+            <section class="mb-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="h1">Настройки профиля</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-12 mb-4 mb-md-0">
+                        <aside class="aside">
+                            <div class="aside__element">
+                                <!--Импортируем навигацию-->
+                                //= dist/template/navigation/navigation.html
+                                <!--/Импортируем навигацию-->
+                            </div>
+                            <div class="aside__element">
+                                <!--Импортируем рекламный блок-->
+                                //= dist/template/ad-unit/ad-unit.html
+                                <!--/Импортируем рекламный блок-->
+                            </div>
+                            <div class="aside__element">
+                                <!--Импортируем рекламный блок-->
+                                //= dist/template/ad-unit/ad-unit.html
+                                <!--/Импортируем рекламный блок-->
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-12">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <form name="profileData" class="form form_profile-data" method="post" action="profile-data.php">
+                                    <h2 class="h2">Ваши данные</h2>
+                                    <div class="form-group">
+                                        <label for="profileDataInputSecondName">Фамилия</label>
+                                        <input name="secondName" type="text" class="form-control" id="profileDataInputSecondName" placeholder="Ваша фамилия" required>
+                                        <div class="error-box"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="profileDataInputName">Имя</label>
+                                        <input name="name" type="text" class="form-control" id="profileDataInputName" placeholder="Ваше имя" required">
+                                        <div class="error-box"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="profileDataInputPatronymic">Отчество</label>
+                                        <input name="Patronymic" type="text" class="form-control" id="profileDataInputPatronymic" placeholder="Ваше отчество" required>
+                                        <div class="error-box"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="profileDataInputTel">Телефон</label>
+                                        <input name="tel" type="tel" class="form-control" id="profileDataInputTel" placeholder="Ваш телефон" required autocomplete="off">
+                                        <div class="error-box"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="profileDataInputEmail">Электронная почта</label>
+                                        <input name="email" type="email" class="form-control" id="profileDataInputEmail" placeholder="Ваш e-mail" required>
+                                        <div class="error-box"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="profileDataInputCompanyName">Наименование компании</label>
+                                        <input name="companyName" type="text" class="form-control" id="profileDataInputCompanyName" placeholder="Название вашей компании" required>
+                                        <div class="error-box"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="profileDataInputINN">ИНН</label>
+                                        <input name="INN" type="text" class="form-control" id="profileDataInputINN" placeholder="Ваш ИНН" required>
+                                        <div class="error-box"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="profileDataInputOGRN">ОГРН</label>
+                                        <input name="OGRN" type="text" class="form-control" id="profileDataInputOGRN" placeholder="Ваш ОГРН" required>
+                                        <div class="error-box"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="profileDataInputAddress">Адрес</label>
+                                        <input name="address" type="text" class="form-control" id="profileDataInputAddress" placeholder="Ваш адрес" required>
+                                        <div class="error-box"></div>
+                                    </div>
+                                    <button type="submit" class="btn btn-success btn_radius mt-4">Сохранить изменения</button>
+                                </form>
+                            </div>
+                            <div class="col-md-6 mt-5 mt-md-0">
+                              <form name="profilePassword" class="form form_profile-password" method="post" action="checkout-goods.php">
+                                    <h2 class="h2">Ваш пароль</h2>
+                                    <div class="form-group">
+                                        <label for="profilePasswordInputSecondName">Старый пароль</label>
+                                        <input name="oldPassword" type="password" class="form-control" id="profilePasswordInputSecondName" required>
+                                        <div class="error-box"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="profilePasswordtInputName">Новый пароль</label>
+                                        <input name="newPassword" type="password" class="form-control" id="profilePasswordInputName" required">
+                                        <div class="error-box"></div>
+                                    </div>
+                                    <button type="submit" class="btn btn-dark btn_radius mt-4">Изменить пароль</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--Импортируем футер-->
+    //= dist/template/footer/footer.html
+    <!--/Импортируем футер-->
+    <!--Импортируем модальное окно регионов-->
+    //= dist/template/modal-region/modal-region.html
+    <!--/Импортируем модальное окно регионов-->
+    <script src="dist/js/critical.js"></script>
+    <script src="dist/js/main.js"></script>
+    <script>
+    $(document).ready(function() {
+
+        $(function() {
+            // Массив с названием городов
+            var availableTags = [
+                "Москва",
+                "Санкт-Петербург",
+                "Волгоград",
+                "Воронеж",
+                "Екатеринбург",
+                "Казань",
+                "Калуга",
+                "Краснодар",
+                "Нижний Новгород",
+                "Новосибирск",
+                "Ростов-на-Дону",
+                "Самара",
+                "Саратов",
+                "Сочи",
+                "Уфа",
+                "Ярославль",
+                "Киев",
+                "Днепр",
+                "Донецк",
+                "Запорожье",
+                "Кривой рог",
+                "Львов",
+                "Одесса",
+                "Харьков",
+                "Минск",
+                "Брест",
+                "Витебск",
+                "Гомель",
+                "Гродно",
+                "Могилев",
+                "Ташкент",
+            ];
+
+            // включаем автодополнение
+            $("#cityes-search-input").autocomplete({
+                source: availableTags
+            });
+
+        });
+    });
+    </script>
+</body>
+
+</html>

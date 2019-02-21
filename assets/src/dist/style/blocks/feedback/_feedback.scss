@@ -1,0 +1,11 @@
+.feedback {
+	background-color: #e2e2e2;
+	padding: 2rem 1.5rem;
+	&__title {
+		font-size: 1.5rem;
+		font-weight: normal;
+		font-style: italic;
+	}
+}
+
+@import "feedback-mediaqueries";

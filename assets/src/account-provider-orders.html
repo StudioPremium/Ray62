@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>История заказов</title>
+    <title>Заказы</title>
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 
@@ -13,7 +13,7 @@
     <!--Импортируем header-->
     //= dist/template/header/header.html
     <!--/Импортируем header-->
-	<div class="page-content">
+    <div class="page-content">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -25,7 +25,7 @@
             <section class="mb-5">
                 <div class="row">
                     <div class="col-12">
-                        <h1 class="h1">История заказов</h1>
+                        <h1 class="h1">Заказы</h1>
                     </div>
                 </div>
                 <div class="row">
@@ -49,6 +49,24 @@
                         </aside>
                     </div>
                     <div class="col-lg-9 col-md-8 col-12">
+                        <div class="filter-panel mb-4">
+                            <div class="filter-panel__itm">
+                                <span class="filter-panel__title">Выбрать по статусу: </span>
+                                <a href="#" class="filter-panel__action">
+                                    <div class="filter-sorter">
+                                        <span class="filter-sorter__text">Новый</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="filter-panel__itm">
+                                <span class="filter-panel__title">Сортировать по: </span>
+                                <a href="#" class="filter-panel__action">
+                                    <div class="filter-sorter">
+                                        <span class="filter-sorter__text">Дата заказа</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-12">
                                 <div class="card">
@@ -207,65 +225,64 @@
                             </div>
                         </div>
                     </div>
-                  </div>
                 </div>
             </section>
         </div>
     </div>
-  	<!--Импортируем футер-->
-  	//= dist/template/footer/footer.html
-  	<!--/Импортируем футер-->
-	 <!--Импортируем модальное окно регионов-->
+    <!--Импортируем футер-->
+    //= dist/template/footer/footer.html
+    <!--/Импортируем футер-->
+    <!--Импортируем модальное окно регионов-->
     //= dist/template/modal-region/modal-region.html
     <!--/Импортируем модальное окно регионов-->
     <script src="dist/js/critical.js"></script>
     <script src="dist/js/main.js"></script>
     <script>
-        $(document).ready(function() {
+    $(document).ready(function() {
 
-            $( function() {
-                // Массив с названием городов
-                var availableTags = [
-                  "Москва",
-                  "Санкт-Петербург",
-                  "Волгоград",
-                  "Воронеж",
-                  "Екатеринбург",
-                  "Казань",
-                  "Калуга",
-                  "Краснодар",
-                  "Нижний Новгород",
-                  "Новосибирск",
-                  "Ростов-на-Дону",
-                  "Самара",
-                  "Саратов",
-                  "Сочи",
-                  "Уфа",
-                  "Ярославль",
-                  "Киев",
-                  "Днепр",
-                  "Донецк",
-                  "Запорожье",
-                  "Кривой рог",
-                  "Львов",
-                  "Одесса",
-                  "Харьков",
-                  "Минск",
-                  "Брест",
-                  "Витебск",
-                  "Гомель",
-                  "Гродно",
-                  "Могилев",
-                  "Ташкент",
-                ];
+        $(function() {
+            // Массив с названием городов
+            var availableTags = [
+                "Москва",
+                "Санкт-Петербург",
+                "Волгоград",
+                "Воронеж",
+                "Екатеринбург",
+                "Казань",
+                "Калуга",
+                "Краснодар",
+                "Нижний Новгород",
+                "Новосибирск",
+                "Ростов-на-Дону",
+                "Самара",
+                "Саратов",
+                "Сочи",
+                "Уфа",
+                "Ярославль",
+                "Киев",
+                "Днепр",
+                "Донецк",
+                "Запорожье",
+                "Кривой рог",
+                "Львов",
+                "Одесса",
+                "Харьков",
+                "Минск",
+                "Брест",
+                "Витебск",
+                "Гомель",
+                "Гродно",
+                "Могилев",
+                "Ташкент",
+            ];
 
-                // включаем автодополнение
-                $( "#cityes-search-input" ).autocomplete({
-                  source: availableTags
-                });
-
+            // включаем автодополнение
+            $("#cityes-search-input").autocomplete({
+                source: availableTags
             });
+
         });
+    });
     </script>
 </body>
 

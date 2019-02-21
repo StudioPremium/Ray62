@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+    <!--Импортируем header-->
+    //= dist/template/header/header.html
+    <!--/Импортируем header-->
+    <div class="page-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!--Импортируем хлебные крошки-->
+                    //= dist/template/breadcrumb/breadcrumb.html
+                    <!--/Импортируем хлебные крошки-->
+                </div>
+            </div>
+            <section class="mb-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="h1">Оформление заказа</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card card_size_big">
+                            <div class="card__left">
+                              <div class="card__img">
+                                <img class="img-fluid" src="dist/img/card-img.jpg" alt="Заказ">
+                              </div>
+                            </div>
+                            <div class="card__content card__content_type_vertical">
+                                <h5 class="card__title">Токарный станок с ЧПУ HAAS SL20TE</h5>
+                                <div class="seller-info seller-info_min">
+                                    <ul class="seller-info__list">
+                                      <li class="seller-info__itm">
+                                        <span class="seller-info__caption">Состояние:</span>
+                                        <span class="seller-info__text">Б/У</span>
+                                      </li>
+                                      <li class="seller-info__itm">
+                                        <span class="seller-info__caption">Продавец:</span>
+                                        <div class="seller-info__content">
+                                          <a href="#" class="seller-info__text seller-info__text_name">Андрей Васильевич</a>
+                                        </div>
+                                      </li>
+                                      <li class="seller-info__itm">
+                                        <span class="seller-info__caption">Местонахождение:</span>
+                                        <span class="seller-info__text">Москва</span>
+                                      </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__right">
+                              <span class="card__price"><span>495 000</span> руб.</span>
+                            </div>
+                            <button type="button" class="btn card__btn card__btn_type_close"><i class="icon icon_close"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                      <form name="CheckoutGoods" class="form form_checkout" method="post" action="checkout-goods.php">
+                        <div class="row justify-content-between ">
+                          <div class="col-lg-5 col-md-6">
+                            <h2 class="h2">Данные покупателя</h2>
+                            <div class="form-group">
+                                <label for="checkoutInputSecondName">Фамилия</label>
+                                <input name="secondName" type="text" class="form-control" id="checkoutInputSecondName" placeholder="Ваша фамилия" required>
+                                <div class="error-box"></div>
+                            </div>
+                            <div class="form-group">
+                              <label for="checkoutInputName">Имя</label>
+                              <input name="name" type="text" class="form-control" id="checkoutInputName" placeholder="Ваше имя" required">
+                            </div>
+                            <div class="form-group">
+                              <label for="checkoutInputPatronymic">Отчество</label>
+                              <input name="Patronymic" type="text" class="form-control" id="checkoutInputPatronymic" placeholder="Ваше отчество" required>
+                            </div>
+                            <div class="form-group">
+                              <label for="checkoutInputTel">Телефон</label>
+                              <input name="tel" type="tel" class="form-control" id="checkoutInputTel" placeholder="Ваш телефон" required autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                              <label for="checkoutInputEmail">Электронная почта</label>
+                              <input name="email" type="email" class="form-control" id="checkoutInputEmail" placeholder="Ваш e-mail" required>
+                            </div>
+                            <div class="form-group">
+                              <label for="checkoutInputCompanyName">Наименование компании</label>
+                              <input name="companyName" type="text" class="form-control" id="checkoutInputCompanyName" placeholder="Название вашей компании" required>
+                            </div>
+                            <div class="form-group">
+                              <label for="checkoutInputINN">ИНН</label>
+                              <input name="INN" type="text" class="form-control" id="checkoutInputINN" placeholder="Ваш ИНН" required>
+                            </div>
+                            <div class="form-group">
+                              <label for="checkoutInputOGRN">ОГРН</label>
+                              <input name="OGRN" type="text" class="form-control" id="checkoutInputOGRN" placeholder="Ваш ОГРН" required>
+                            </div>
+                          </div>
+                          <div class="col-lg-5 col-md-6">
+                            <h2 class="h2">Доставка и оплата</h2>
+                            <div class="order-switcher">
+                              <h5 class="order-switcher__title">Способ оплаты</h5>
+                              <ul class="order-switcher__list">
+                                <li class="order-switcher__itm">
+                                  <input name="paymentMethodBank" id="switcherBank" class="order-switcher__input" type="checkbox">
+                                  <label for="switcherBank" class="order-switcher__label">
+                                    <span class="order-switcher__text">Банковская карта</span>
+                                  </label>
+                                </li>
+                                <li class="order-switcher__itm">
+                                  <input name="paymentMethodCheckingAccount" id="switcherCheckingAccount" class="order-switcher__input" type="checkbox">
+                                  <label for="switcherCheckingAccount" class="order-switcher__label">
+                                    <span class="order-switcher__text">Расчетный счет</span>
+                                  </label>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="order-switcher">
+                              <h5 class="order-switcher__title">Доставка</h5>
+                              <ul class="order-switcher__list">
+                                <li class="order-switcher__itm">
+                                  <input name="deliveryOptionPickup" id="switcherPickup" class="order-switcher__input" type="checkbox">
+                                  <label for="switcherPickup" class="order-switcher__label">
+                                    <span class="order-switcher__text">Самовывоз</span>
+                                  </label>
+                                </li>
+                                <li class="order-switcher__itm">
+                                  <input name="deliveryOptionTransportCompany" id="switcherTransportCompany" class="order-switcher__input" type="checkbox">
+                                  <label for="switcherTransportCompany" class="order-switcher__label">
+                                    <span class="order-switcher__text">Транспортная компания</span>
+                                  </label>
+                                </li>
+                              </ul>
+                            </div>
+                            <button type="submit" class="btn btn-success btn_radius_lg mt-4">Оформить заказ</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!--Импортируем футер-->
+    //= dist/template/footer/footer.html
+    <!--/Импортируем футер-->
+    <!--Импортируем модальное окно регионов-->
+    //= dist/template/modal-region/modal-region.html
+    <!--/Импортируем модальное окно регионов-->
+    <script src="dist/js/critical.js"></script>
+    <script src="dist/js/main.js"></script>
+    <script>
+    $(document).ready(function() {
+
+        $(function() {
+            // Массив с названием городов
+            var availableTags = [
+                "Москва",
+                "Санкт-Петербург",
+                "Волгоград",
+                "Воронеж",
+                "Екатеринбург",
+                "Казань",
+                "Калуга",
+                "Краснодар",
+                "Нижний Новгород",
+                "Новосибирск",
+                "Ростов-на-Дону",
+                "Самара",
+                "Саратов",
+                "Сочи",
+                "Уфа",
+                "Ярославль",
+                "Киев",
+                "Днепр",
+                "Донецк",
+                "Запорожье",
+                "Кривой рог",
+                "Львов",
+                "Одесса",
+                "Харьков",
+                "Минск",
+                "Брест",
+                "Витебск",
+                "Гомель",
+                "Гродно",
+                "Могилев",
+                "Ташкент",
+            ];
+
+            // включаем автодополнение
+            $("#cityes-search-input").autocomplete({
+                source: availableTags
+            });
+
+        });
+    });
+    </script>
+</body>
+
+</html>

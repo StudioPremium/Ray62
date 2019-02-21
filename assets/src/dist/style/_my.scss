@@ -109,7 +109,14 @@
 @import "blocks/card/card";
 // контекстные сообщения обратной связи
 @import "blocks/alert/alert";
-
+// Ссылка с обращением внимания
+@import "blocks/link-strong/link-strong";
+// Контакты
+@import "blocks/contacts/contacts";
+// Контакты
+@import "blocks/feedback/feedback";
+// Смена вариантов при заказе
+@import "blocks/order-switcher/order-switcher";
 
 // УТИЛИТЫ
 // пространство
@@ -125,3 +132,5 @@
 @import "pages/product-page/product-page";
 // о проекте
 @import "pages/about-the-project/about-the-project";
+// Контакты
+@import "pages/contacts/contacts";

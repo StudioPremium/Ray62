@@ -1,0 +1,16 @@
+@media (max-width: $screen-width-md) {
+    .contacts-page-content {
+        flex-direction: column-reverse;
+
+        &__left {
+            width: auto;
+            padding-right: 0;
+        }
+
+        &__right {
+            width: auto;
+            padding-left: 0;
+             margin-bottom: 2rem;
+        }
+    }
+}
