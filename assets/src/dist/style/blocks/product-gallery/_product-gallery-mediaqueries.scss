@@ -10,3 +10,23 @@
 		}
 	}
 }
+
+@media (max-width: $screen-width-xs) {
+	.product-gallery {
+		&_big {
+			img {
+				&.slick-loading {
+			    	max-height: 218px;
+		    	}
+			}
+		}
+
+		&_min {
+			img {
+				&.slick-loading {
+			    	max-height: 48px;
+		    	}
+			}
+		}
+	}
+}

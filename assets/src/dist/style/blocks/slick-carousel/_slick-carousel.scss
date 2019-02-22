@@ -4,11 +4,12 @@
 	height: 30px;
 	width: 30px;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+    background-image: url(../img/ray-sprite.png);
 	&:hover, &:focus {
         outline: none;
-        background: transparent;
+        background-color: transparent;
         color: transparent;
+        background: url(../img/ray-sprite.png);
         &:before {
             opacity: $slick-opacity-on-hover;
         }
@@ -20,22 +21,22 @@
  
 .slick-next {
 	right: 15px;
-	background-image: url(../img/icon-arrow-next.png);
+	background-position: -38px -64px;
 	&:hover, &:focus {
-        background-image: url(../img/icon-arrow-next.png);
+        background-position: -38px -64px;
     }
 }
 
 .slick-prev {
 	left: 15px;
-	background-image: url(../img/icon-arrow-prev.png);
+	background-position: -75px -64px;
 	&:hover, &:focus {
-         background-image: url(../img/icon-arrow-prev.png);
+        background-position: -75px -64px;
     }
 }
 
 .slick-list {
     .slick-loading & {
-        background: #fff center center no-repeat;
+        background: red slick-image-url("preloader.svg") center center no-repeat;
     }
 }

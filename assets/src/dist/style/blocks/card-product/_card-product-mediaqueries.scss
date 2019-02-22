@@ -8,3 +8,14 @@
 		}
 	}
 }
+
+@media (max-width: $screen-width-xs) {
+	.card-product {
+		&__img {
+			img {
+				&.slick-loading {
+			       max-height: 170px;
+		    	}
+			}
+		}
+}

@@ -158,7 +158,7 @@ function sendingGoods(eventTarget, pathInteraction, typeInteraction, textSuccess
         },
         dataType: 'json',
         success: $.proxy(function( data ) {
-
+        	console.log(data);
        		var title = data.title;
             var text = data.text;
             var linktext = data.linktext;

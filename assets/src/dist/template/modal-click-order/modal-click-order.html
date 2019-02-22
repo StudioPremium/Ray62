@@ -8,7 +8,7 @@
                 </button>
             </div>
             <div class="modal-body modal-order__content">
-                <form name="order" class="form form_order" method="post" action="order.php">
+                <form name="order" class="form form_order" method="post" action="dist/server/order.php">
                     <div class="form-group">
                         <label for="orderInputName">Имя</label>
                         <input name="name" type="text" class="form-control" id="orderInputName" placeholder="Ваше имя" required>
@@ -17,6 +17,7 @@
                     <div class="form-group">
                         <label for="orderInputTel">Телефон</label>
                         <input name="tel" type="tel" class="form-control" id="orderInputTel" placeholder="Ваше телефон" required autocomplete="off">
+                        <div class="error-box"></div>
                     </div>
                     <div class="form-group">
                         <label for="orderInputEmail">Электонная почта</label>
@@ -24,7 +25,7 @@
                         <div class="error-box"></div>
                     </div>
                     <div class="mb-3">нажимая кнопку "Отправить" вы соглашаетесь с <a href="#">политикой конфиденциальности</a></div>
-                    <button type="submit" class="btn btn-primary" disabled>Отправить</button>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
                 </form>
             </div>
         </div>

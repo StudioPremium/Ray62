@@ -1,11 +1,11 @@
 .filter-sorter {
 	padding-right: 1.25rem;
-	background-position: right center;
 	background-repeat: no-repeat;
+	background-image: url(../img/ray-sprite-vertical.png);
 	&_sort_desc {
-		background-image: url(../img/arrow-bottom.png);
+		background-position: 25px -17px;
 	}
 	&_sort_asc {
-		background-image: url(../img/arrow-top.png);
+		background-position: 25px -1px;
 	}
 }

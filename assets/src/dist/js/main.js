@@ -40,6 +40,9 @@
 // Импортируем fancybox	
 //= ../../../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js
 
+// Импортируем imagesloaded	
+//= ../../../../node_modules/imagesloaded/imagesloaded.pkgd.js
+
 // Импортируем другие js-файлы
 
 //файл с самописными скриптами

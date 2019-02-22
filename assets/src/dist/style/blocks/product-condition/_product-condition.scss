@@ -6,8 +6,9 @@
 	padding-bottom: 0.625rem;
 	display: flex;
 	align-items: center;
+	background-image: url(../img/ray-sprite-vertical.png);
 	&_stock_in {
-		background-image: url(../img/good-in-stock.png);
+		background-position: -4px -35px;
 
 		.product-condition__text {
 			color: $success;
@@ -15,7 +16,7 @@
 	}
 
 	&_stock_out {
-		background-image: url(../img/good-out-stock.png);
+		background-position: -4px -74px;
 		.product-condition__text {
 			color: $red;
 		}

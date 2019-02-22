@@ -16,6 +16,13 @@
 	&__img {
 		img {
 			width: 100%;
+			
+			&.slick-loading {
+		       width: 100%;
+		       max-height: 170px;
+		       padding-top: 75%;
+		       background: #e6e6e6 slick-image-url("preloader.svg") center center no-repeat;
+	    	}
 		}
 	}
 	&__content {

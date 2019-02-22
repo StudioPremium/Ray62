@@ -79,7 +79,7 @@
                     <div class="col-xl-3 col-md-4 col-sm-6 pb-3 pt-3">
                         <div class="card-product">
                             <div class="card-product__img">
-                                <img class="img-fluid" src="dist/img/card-product-img.jpg" alt="Токарный станок с ЧПУ" title="Токарный станок с ЧПУ">
+                                <img class="img-fluid" data-lazy="dist/img/card-product-img.jpg">
                             </div>
                             <div class="card-product__content">
                                 <h5 class="card-product__title">Токарный станок с ЧПУ HAAS SL20TCE</h5>
@@ -111,7 +111,7 @@
                     <div class="col-xl-3 col-md-4 col-sm-6 pb-3 pt-3">
                         <div class="card-product">
                             <div class="card-product__img">
-                                <img class="img-fluid" src="dist/img/card-product-img.jpg" alt="Токарный станок с ЧПУ" title="Токарный станок с ЧПУ">
+                                <img class="img-fluid" data-lazy="dist/img/card-product-img-2.jpg">
                             </div>
                             <div class="card-product__content">
                                 <h5 class="card-product__title">Токарный станок с ЧПУ HAAS SL20TCE</h5>
@@ -143,7 +143,7 @@
                     <div class="col-xl-3 col-md-4 col-sm-6 pb-3 pt-3">
                         <div class="card-product">
                             <div class="card-product__img">
-                                <img class="img-fluid" src="dist/img/card-product-img.jpg" alt="Токарный станок с ЧПУ" title="Токарный станок с ЧПУ">
+                                <img class="img-fluid" data-lazy="dist/img/card-product-img-3.jpg">
                             </div>
                             <div class="card-product__content">
                                 <h5 class="card-product__title">Токарный станок с ЧПУ HAAS SL20TCE</h5>
@@ -175,7 +175,7 @@
                     <div class="col-xl-3 col-md-4 col-sm-6 pb-3 pt-3">
                         <div class="card-product">
                             <div class="card-product__img">
-                                <img class="img-fluid" src="dist/img/card-product-img.jpg" alt="Токарный станок с ЧПУ" title="Токарный станок с ЧПУ">
+                                <img class="img-fluid" data-lazy="dist/img/card-product-img-4.jpg">
                             </div>
                             <div class="card-product__content">
                                 <h5 class="card-product__title">Токарный станок с ЧПУ HAAS SL20TCE</h5>
@@ -207,7 +207,7 @@
                     <div class="col-xl-3 col-md-4 col-sm-6 pb-3 pt-3">
                         <div class="card-product">
                             <div class="card-product__img">
-                                <img class="img-fluid" src="dist/img/card-product-img.jpg" alt="Токарный станок с ЧПУ" title="Токарный станок с ЧПУ">
+                                <img class="img-fluid" data-lazy="dist/img/card-product-img-5.jpg">
                             </div>
                             <div class="card-product__content">
                                 <h5 class="card-product__title">Токарный станок с ЧПУ HAAS SL20TCE</h5>
@@ -239,7 +239,7 @@
                     <div class="col-xl-3 col-md-4 col-sm-6 pb-3 pt-3">
                         <div class="card-product">
                             <div class="card-product__img">
-                                <img class="img-fluid" src="dist/img/card-product-img.jpg" alt="Токарный станок с ЧПУ" title="Токарный станок с ЧПУ">
+                                <img class="img-fluid" data-lazy="dist/img/card-product-img-6.jpg">
                             </div>
                             <div class="card-product__content">
                                 <h5 class="card-product__title">Токарный станок с ЧПУ HAAS SL20TCE</h5>
@@ -271,7 +271,7 @@
                     <div class="col-xl-3 col-md-4 col-sm-6 pb-3 pt-3">
                         <div class="card-product">
                             <div class="card-product__img">
-                                <img class="img-fluid" src="dist/img/card-product-img.jpg" alt="Токарный станок с ЧПУ" title="Токарный станок с ЧПУ">
+                                <img class="img-fluid" data-lazy="dist/img/card-product-img-7.jpg">
                             </div>
                             <div class="card-product__content">
                                 <h5 class="card-product__title">Токарный станок с ЧПУ HAAS SL20TCE</h5>
@@ -363,6 +363,7 @@
                 var sliderId = '#' + sliderIdName;
                         
                 $(sliderId).slick({
+                    lazyLoad: 'ondemand',
                     dots: false,
                     infinite: false,
                     slidesToShow: 4,
