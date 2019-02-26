@@ -49,22 +49,33 @@
                           </div>
                         </div>
                         <div class="filter-panel__itm">
-                          <span class="filter-panel__title">Сортировать по:</span>
-                          <a href="#" class="filter-panel__action">
-                            <div class="filter-sorter filter-sorter_price filter-sorter_sort_desc">
-                              <span class="filter-sorter__text">Цене</span>
+                          <form action="#">
+                            <div class="filter-panel__action">
+                              <label class="filter-panel__title" for="sort">Сортировать: </label>
+                                <select name="sort" id="sort" class="filter-panel__select">
+                                  <optgroup label="Дате">
+                                    <option selected="selected" value="http://localhost:3000/?sort=p.sort_order&order=ASC">Новее</option>
+                                    <option value="http://localhost:3000/?sort=p.sort_order&order=ASC">Старше</option>
+                                  </optgroup>
+                                  <optgroup label="Цене">
+                                    <option value="http://localhost:3000/?sort=p.sort_order&order=ASC">По убыванию</option>
+                                    <option value="http://localhost:3000/?sort=p.sort_order&order=ASC">По возрастанию</option>
+                                  </optgroup>
+                                </select>
                             </div>
-                          </a>
+                          </form>
                         </div>
                         <div class="filter-panel__itm">
-                          <span class="filter-panel__title">Отображать по:</span>
-                          <div class="filter-panel__action">
-                            <select name="sortByQuantity" id="" onchange="location = this.value">
-                              <option value="http://localhost:3000/?sort=p.sort_order&order=ASC">20</option>
-                              <option value="http://localhost:3000/?sort=p.sort_order&order=ASC">50</option>
-                              <option value="http://localhost:3000/?sort=p.sort_order&order=ASC">100</option>
-                            </select>
-                          </div>
+                          <form action="#">
+                            <div class="filter-panel__action">
+                              <label class="filter-panel__title" for="display">Отображать по: </label>
+                                <select name="sort" id="display" class="filter-panel__select">
+                                    <option selected="selected" value="http://localhost:3000/?sort=p.sort_order&order=ASC">20</option>
+                                    <option value="http://localhost:3000/?sort=p.sort_order&order=ASC">50</option>
+                                    <option value="http://localhost:3000/?sort=p.sort_order&order=ASC">100</option>
+                                </select>
+                            </div>
+                          </form>
                         </div>
                       </div>
                       <div class="row">
@@ -502,7 +513,7 @@
                     <div class="col-xl-3 col-md-4 col-sm-6 pb-3 pt-3">
                         <div class="card-product">
                             <div class="card-product__img">
-                                <img class="img-fluid" data-src="dist/img/card-product-img.jpg" src="" alt="Токарный станок с ЧПУ" title="Токарный станок с ЧПУ">
+                              <img class="img-fluid" data-lazy="dist/img/card-product-img.jpg">
                             </div>
                             <div class="card-product__content">
                                 <h5 class="card-product__title">Токарный станок с ЧПУ HAAS SL20TCE</h5>
@@ -534,7 +545,7 @@
                     <div class="col-xl-3 col-md-4 col-sm-6 pb-3 pt-3">
                         <div class="card-product">
                             <div class="card-product__img">
-                                <img class="img-fluid" data-src="dist/img/card-product-img.jpg" src="" alt="Токарный станок с ЧПУ" title="Токарный станок с ЧПУ">
+                                <img class="img-fluid" data-lazy="dist/img/card-product-img-2.jpg">
                             </div>
                             <div class="card-product__content">
                                 <h5 class="card-product__title">Токарный станок с ЧПУ HAAS SL20TCE</h5>
@@ -566,7 +577,7 @@
                     <div class="col-xl-3 col-md-4 col-sm-6 pb-3 pt-3">
                         <div class="card-product">
                             <div class="card-product__img">
-                                <img class="img-fluid" data-src="dist/img/card-product-img.jpg" src="" alt="Токарный станок с ЧПУ" title="Токарный станок с ЧПУ">
+                                <img class="img-fluid" data-lazy="dist/img/card-product-img-3.jpg">
                             </div>
                             <div class="card-product__content">
                                 <h5 class="card-product__title">Токарный станок с ЧПУ HAAS SL20TCE</h5>
@@ -598,7 +609,7 @@
                     <div class="col-xl-3 col-md-4 col-sm-6 pb-3 pt-3">
                         <div class="card-product">
                             <div class="card-product__img">
-                                <img class="img-fluid" data-src="dist/img/card-product-img.jpg" src="" alt="Токарный станок с ЧПУ" title="Токарный станок с ЧПУ">
+                                <img class="img-fluid" data-lazy="dist/img/card-product-img-4.jpg">
                             </div>
                             <div class="card-product__content">
                                 <h5 class="card-product__title">Токарный станок с ЧПУ HAAS SL20TCE</h5>
@@ -630,7 +641,7 @@
                     <div class="col-xl-3 col-md-4 col-sm-6 pb-3 pt-3">
                         <div class="card-product">
                             <div class="card-product__img">
-                                <img class="img-fluid" data-src="dist/img/card-product-img.jpg" src="" alt="Токарный станок с ЧПУ" title="Токарный станок с ЧПУ">
+                              <img class="img-fluid" data-lazy="dist/img/card-product-img-5.jpg">
                             </div>
                             <div class="card-product__content">
                                 <h5 class="card-product__title">Токарный станок с ЧПУ HAAS SL20TCE</h5>
@@ -662,7 +673,7 @@
                     <div class="col-xl-3 col-md-4 col-sm-6 pb-3 pt-3">
                         <div class="card-product">
                             <div class="card-product__img">
-                                <img class="img-fluid" data-src="dist/img/card-product-img.jpg" src="" alt="Токарный станок с ЧПУ" title="Токарный станок с ЧПУ">
+                              <img class="img-fluid" data-lazy="dist/img/card-product-img-6.jpg">
                             </div>
                             <div class="card-product__content">
                                 <h5 class="card-product__title">Токарный станок с ЧПУ HAAS SL20TCE</h5>
@@ -694,7 +705,7 @@
                     <div class="col-xl-3 col-md-4 col-sm-6 pb-3 pt-3">
                         <div class="card-product">
                             <div class="card-product__img">
-                                <img class="img-fluid" data-src="dist/img/card-product-img.jpg" src="" alt="Токарный станок с ЧПУ" title="Токарный станок с ЧПУ">
+                              <img class="img-fluid" data-lazy="dist/img/card-product-img-7.jpg">
                             </div>
                             <div class="card-product__content">
                                 <h5 class="card-product__title">Токарный станок с ЧПУ HAAS SL20TCE</h5>
@@ -736,6 +747,24 @@
     <script src="dist/js/main.js"></script>
     <script>
         $(document).ready(function() {
+
+            if (document.documentElement.clientWidth > 576) {
+
+              $(function() {
+                  $('.filter-panel__select').each(function(key, item) {
+                      var selectIdName = 'select' + key;
+                      this.id = selectIdName;
+                      var selectId = '#' + selectIdName;
+
+                      $(selectId).selectmenu({
+                          change: function( event, ui ) {
+                              location = this.value
+                          }
+                      });      
+                  });
+              });
+
+            };
 
             $( function() {
                 // Массив с названием городов
@@ -786,6 +815,7 @@
                 var sliderId = '#' + sliderIdName;
                         
                 $(sliderId).slick({
+                    lazyLoad: 'ondemand',
                     dots: false,
                     infinite: false,
                     slidesToShow: 4,

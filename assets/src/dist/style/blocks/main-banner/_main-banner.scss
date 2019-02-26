@@ -4,4 +4,16 @@
 	list-style: none;
 	overflow: hidden;
 	max-height: 380px;
+	&__itm {
+		img {
+			width: 100%;
+			padding-top: 0;
+			max-height: 380px;
+			&.slick-loading {
+		       width: 100%;
+		       padding-top: 35%;
+		       background: #e6e6e6 slick-image-url("preloader.svg") center center no-repeat;
+	    	}
+		}
+	}
 }

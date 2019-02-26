@@ -59,6 +59,19 @@
 	&__link {
 		color: rgb(68, 68, 68);
 		text-decoration: underline;
+		background-color: transparent;
+		border-color: transparent;
+		cursor: pointer;
+		padding: 0;
+
+		&:hover,
+		&:focus {
+			color:  $link-hover-color;
+			outline: none;
+		}
+		&_primary {
+			color: $primary;
+		}
 	}
 	&__text {
 		font-style: italic;
@@ -82,6 +95,19 @@
 		}
 		&:focus {
 			box-shadow: 0 0 0 0.2rem rgba(252, 49, 49,.25);
+		}
+	}
+	&__form {
+		width: 100%;
+		margin-bottom: 1rem;
+		label {
+			width: 100%;
+		}
+		textarea {
+			resize: none;
+		}
+		&_reviews {
+			display: none;
 		}
 	}
 }

@@ -51,20 +51,32 @@
                     <div class="col-lg-9 col-md-8 col-12">
                         <div class="filter-panel mb-4">
                             <div class="filter-panel__itm">
-                                <span class="filter-panel__title">Выбрать по статусу: </span>
-                                <a href="#" class="filter-panel__action">
-                                    <div class="filter-sorter">
-                                        <span class="filter-sorter__text">Активно</span>
+                                <form action="#">
+                                    <div class="filter-panel__action">
+                                        <label class="filter-panel__title" for="status">Выбрать по статусу: </label>
+                                        <select name="speed" id="status" class="filter-panel__select">
+                                            <option value="http://localhost:3000/?sort=p.sort_order&order=ASC">Активно</option>
+                                            <option value="http://localhost:3000/?sort=p.sort_order&order=ASC">Не активно</option>
+                                        </select>
                                     </div>
-                                </a>
+                                </form>
                             </div>
                             <div class="filter-panel__itm">
-                              <span class="filter-panel__title">Сортировать по:</span>
-                              <a href="#" class="filter-panel__action">
-                                <div class="filter-sorter filter-sorter_price filter-sorter_sort_desc">
-                                  <span class="filter-sorter__text">Цене</span>
-                                </div>
-                              </a>
+                                <form action="#">
+                                    <div class="filter-panel__action">
+                                        <label class="filter-panel__title" for="sort">Сортировать: </label>
+                                        <select name="sort" id="sort" class="filter-panel__select">
+                                            <optgroup label="Дате">
+                                                <option selected="selected" value="http://localhost:3000/?sort=p.sort_order&order=ASC">Новее</option>
+                                                <option value="http://localhost:3000/?sort=p.sort_order&order=ASC">Старше</option>
+                                            </optgroup>
+                                            <optgroup label="Цене">
+                                                <option value="http://localhost:3000/?sort=p.sort_order&order=ASC">По убыванию</option>
+                                                <option value="http://localhost:3000/?sort=p.sort_order&order=ASC">По возрастанию</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                         <div class="row">
@@ -240,6 +252,24 @@
     <script>
     $(document).ready(function() {
 
+        if (document.documentElement.clientWidth > 576) {
+
+            $(function() {
+                $('.filter-panel__select').each(function(key, item) {
+                    var selectIdName = 'select' + key;
+                    this.id = selectIdName;
+                    var selectId = '#' + selectIdName;
+
+                    $(selectId).selectmenu({
+                        change: function( event, ui ) {
+                            location = this.value
+                        }
+                    });      
+                });
+            });
+
+        };
+        
         $(function() {
             // Массив с названием городов
             var availableTags = [

@@ -1,7 +1,8 @@
 .filter-sorter {
+	display: flex;
 	padding-right: 1.25rem;
 	background-repeat: no-repeat;
-	background-image: url(../img/ray-sprite-vertical.png);
+	
 	&_sort_desc {
 		background-position: 25px -17px;
 	}

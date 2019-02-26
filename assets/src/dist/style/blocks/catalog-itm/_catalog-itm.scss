@@ -4,9 +4,7 @@
 	padding-top: 1.25rem;
 	padding-left: 5rem;
 	padding-bottom: 0.75rem;
-	&_auto {
-		background-image: url(../img/catalog-itm-icon.png);
-	}
+	background-size: 60px 60px;
 	&__title {
 		color: $black;
 		font-size: 0.875rem;

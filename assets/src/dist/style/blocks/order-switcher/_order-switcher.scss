@@ -19,7 +19,7 @@
 	}
 	&__input {
 		display: none;
-		&[type=checkbox]:checked {
+		&[type=radio]:checked {
 			& + .order-switcher__label {
 				.order-switcher__text {
 					color: $green;
