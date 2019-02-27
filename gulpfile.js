@@ -196,6 +196,13 @@ gulp.task('image:production', function () {
     gulp.src(path.productionSrc.img) // путь с исходниками картинок
         .pipe(gulp.dest(path.production.img)); // выгрузка готовых файлов
 });
+
+// перенос серверных скриптов в продакш
+gulp.task('server:production', function () {
+    gulp.src(path.productionSrc.server) // путь с исходниками серверных скриптов
+        .pipe(gulp.dest(path.production.server)); // выгрузка готовых файлов
+});
+
 // очистка кэша
 gulp.task('cache:clear', function () {
   cache.clearAll();
@@ -218,7 +225,8 @@ gulp.task('production', [
     'css:production',
     'js:production',
     'fonts:production',
-    'image:production'
+    'image:production',
+    'server:production'
 ]);
 
 // запуск задач при изменении файлов

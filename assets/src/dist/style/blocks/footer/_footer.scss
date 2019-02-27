@@ -16,6 +16,12 @@
 	&__text {
 		
 	}
+	&__link {
+		&_color_black {
+			text-decoration: underline;
+			color: #2f2f2f;
+		}
+	}
 }
 
 a.footer__text {
